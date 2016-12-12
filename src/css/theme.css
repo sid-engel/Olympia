@@ -1,0 +1,39 @@
+/*
+-- Olympia Specific CSS Modifications --
+README!
+Welcome to the CSS modofication file for the theme. This is where you will customize the theme to your liking.
+The data in which each Content-x holds is pretty self explainatory, hopefully the CSS item names are too.
+*/
+
+/*Overall Scheme*/
+.button {
+   background-color: white !important;
+   color: black !important;
+   padding: 15px !important;
+   border-radius: 8px !important;
+   text-decoration: none !important;
+}
+
+.button:hover {
+   background-color: gold !important;
+   color: white !important;
+   padding: 15px !important;
+   border-radius: 8px !important;
+   text-decoration: none !important;
+}
+
+/* NAVBAR */
+.navbar {
+	background-color: #1c1c1c;
+}
+
+.navbar .nav li a {
+	color: white;
+}
+
+.navbar .nav li a:hover {
+	background-color: white;
+	color: black;
+}
+
+/*Content 1*/
