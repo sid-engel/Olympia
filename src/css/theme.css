@@ -66,8 +66,7 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
 	padding-top: 10%;
 	padding-bottom: 30px;
 	position: relative;
-	right: 45px;
-	
+
 }
 
 .content-2 .col-md-5 a {
@@ -77,7 +76,7 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
 .content-2 .col-md-5 h2 {
 	margin-bottom: 20px;
 }
-	
+
 
 .content-2 .col-md-5 p {
 	font-size: 1.125em;
@@ -95,6 +94,6 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
         float: right !important;
     }
 	 .content-2 .col-md-4 img {
-        right: 0px !important;
+     	right: 45px !important;
     }
 }
