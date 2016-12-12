@@ -7,16 +7,16 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
 
 /*Overall Scheme*/
 .button {
-   background-color: white !important;
-   color: black !important;
+   background-color: gold !important;
+   color: white !important;
    padding: 15px !important;
    border-radius: 8px !important;
    text-decoration: none !important;
 }
 
 .button:hover {
-   background-color: gold !important;
-   color: white !important;
+   background-color: white !important;
+   color: gold !important;
    padding: 15px !important;
    border-radius: 8px !important;
    text-decoration: none !important;
@@ -37,3 +37,64 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
 }
 
 /*Content 1*/
+
+
+/*Content 2*/
+.content-2 {
+	background-color: #353535;
+	margin-top: -30px;
+}
+
+.content-2 .row {
+	margin-left: 5%;
+}
+
+
+.content-2 .col-md-5 {
+	text-align: center;
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.content-2 .col-md-4 img {
+	max-width: none !important;
+	float: right;
+	width: 300px;
+	padding-top: 10%;
+	padding-bottom: 30px;
+	position: relative;
+	right: 45px;
+	
+}
+
+.content-2 .col-md-5 a {
+	float: center;
+}
+
+.content-2 .col-md-5 h2 {
+	margin-bottom: 20px;
+}
+	
+
+.content-2 .col-md-5 p {
+	font-size: 1.125em;
+	text-align: center;
+}
+
+/* RESPONSIVE SCALING */
+/* DO NOT TAMPER WITH THIS(UNLESS YOU KNOW WHAT YOU ARE DOING)! */
+
+@media (min-width: 992px) {
+    .content-2 .col-md-5 p {
+        text-align: right !important;
+    }
+	 .content-2 .col-md-5 a {
+        float: right !important;
+    }
+	 .content-2 .col-md-4 img {
+        right: 0px !important;
+    }
+}
