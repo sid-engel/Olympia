@@ -6,79 +6,117 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
 */
 
 /*Overall Scheme*/
-.button {
-   background-color: gold !important;
-   color: white !important;
-   padding: 15px !important;
-   border-radius: 8px !important;
-   text-decoration: none !important;
+
+/*Heading Modifier*/
+hr.about-header {
+        border: 0;
+        height: 2px;
+        background-color: white;
+        width: 185px;
+        margin-top: -10px;
+      }
+
+/* Buttons */
+.btn-primary {
+  background-color: transparent;
+  color: #0b193d;
+  border: 2px solid #0b193d;
 }
 
-.button:hover {
-   background-color: white !important;
-   color: gold !important;
-   padding: 15px !important;
-   border-radius: 8px !important;
-   text-decoration: none !important;
+.btn-primary:hover {
+  background-color: #0b193d;
+  border: 2px solid #0b193d;
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+
+.btn-success {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+
+.btn-success:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
 }
 
 /* NAVBAR */
 .navbar {
-	background-color: #1c1c1c;
+	background-color: #e5e5e5;
+  border: none;
+}
+
+.navbar .navbar-brand {
+  background-color: #0b193d;
+  color: white;
+}
+
+.navbar .navbar-brand:hover {
+  background-color: #0b193d;
+  color: white;
 }
 
 .navbar .nav li a {
-	color: white;
+	color: #0b193d;
 }
 
 .navbar .nav li a:hover {
-	background-color: white;
-	color: black;
+	background-color: #0b193d;
+	color: white;
 }
 
 /*Content 1*/
+.content-1 {
+  text-align: center;
+  color: white;
+}
+.content-1 .jumbotron {
+  /*Paralax Effect */
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  padding-top: 250px;
+  padding-bottom: 250px
+}
 
 /*Content 2*/
 .content-2 {
-	background-color: #353535;
+	background-color: #0b193d;
 	margin-top: -30px;
 }
 
-.content-2 .row {
-	margin-left: 5%;
-}
-
-
-.content-2 .col-md-5 {
+.content-2 .col-md-8, .content-2 .col-md-4 {
 	text-align: center;
 	color: white;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.content-2 .col-md-8 {
+padding-bottom: 50px !important;
 }
 
 .content-2 .col-md-4 img {
 	max-width: none !important;
-	float: right;
 	width: 300px;
-	padding-top: 10%;
-	padding-bottom: 30px;
-	position: relative;
-
+  padding-top: 20px;
 }
 
-.content-2 .col-md-5 a {
+.content-2 .col-md-8 a {
 	float: center;
 }
 
-.content-2 .col-md-5 h2 {
+.content-2 .col-md-8 h2 {
 	margin-bottom: 20px;
 }
 
 
-.content-2 .col-md-5 p {
+.content-2 .col-md-8 p {
 	font-size: 1.125em;
 	text-align: center;
 }
@@ -86,14 +124,11 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
 /* RESPONSIVE SCALING */
 /* DO NOT TAMPER WITH THIS(UNLESS YOU KNOW WHAT YOU ARE DOING)! */
 
-@media (min-width: 992px) {
-    .content-2 .col-md-5 p {
-        text-align: right !important;
-    }
-	 .content-2 .col-md-5 a {
-        float: right !important;
-    }
-	 .content-2 .col-md-4 img {
-     	right: 45px !important;
-    }
+@media (min-width: 1516px) {
+  .content-2 .col-md-8, .content-2 .col-md-4 {
+  	padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
 }
