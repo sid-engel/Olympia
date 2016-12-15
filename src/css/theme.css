@@ -6,14 +6,46 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
 */
 
 /*Overall Scheme*/
+.glyph-profile {
+  text-align: center;
+  font-size: 100px;
+}
+.glyph-price {
+  text-align: center;
+  font-size: 75px;
+  font-color: #333;
+}
+.border-bottom {
+  border-bottom: solid 20px red;
+}
+.border-top {
+  border-top: solid 8px lightgrey;
+}
+
+.top-to-bottom {
+  padding: 20px 25px;
+  margin-left: 40px auto;
+  margin-right: 40px auto;
+  background-image: radial-gradient(#0b193d, #FFF), radial-gradient(#0b193d, #FFF);
+  background-size:	2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat:	no-repeat;
+}
 
 /*Heading Modifier*/
-hr.about-header {
+hr.primary-header {
         border: 0;
         height: 2px;
         background-color: white;
         width: 185px;
         margin-top: -10px;
+      }
+hr.secondary-header {
+        border: 0;
+        height: 2px;
+        background-color: #333;
+        width: 150px;
+        margin-top: 10px;
       }
 
 /* Buttons */
@@ -84,48 +116,96 @@ hr.about-header {
   padding-bottom: 250px
 }
 
-/*Content 2*/
+/*Content 2 */
 .content-2 {
-	background-color: #0b193d;
-	margin-top: -30px;
+  background-color: #f7f7f7;
+  margin-top: -30px;
+  padding-bottom: 40px;
 }
 
-.content-2 .col-md-8, .content-2 .col-md-4 {
+.content-2 .col-md-4 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+
+.content-2 .col-md-4 p {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.content-2 .col-md-4 a {
+  margin-top: 10px;
+}
+
+/*Content 3*/
+.content-3 {
+	background-color: #0b193d;
+	margin-top: -30px;
+  padding-bottom: 20px;
+}
+
+.content-3 .col-md-8, .content-3 .col-md-4 {
 	text-align: center;
 	color: white;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 
-.content-2 .col-md-8 {
+.content-3 .col-md-8 {
 padding-bottom: 50px !important;
 }
 
-.content-2 .col-md-4 img {
+.content-3 .col-md-4 img {
 	max-width: none !important;
 	width: 300px;
   padding-top: 20px;
 }
 
-.content-2 .col-md-8 a {
+.content-3 .col-md-8 a {
 	float: center;
 }
 
-.content-2 .col-md-8 h2 {
+.content-3 .col-md-8 h2 {
 	margin-bottom: 20px;
 }
 
 
-.content-2 .col-md-8 p {
+.content-3 .col-md-8 p {
 	font-size: 1.125em;
 	text-align: center;
 }
+
+/*Content 4 */
+.content-4 {
+  background-color: #f7f7f7;
+  margin-top: -30px;
+  padding-bottom: 40px;
+}
+
+.content-4 .col-md-4 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+}
+
+.content-4 .col-md-4 p {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.content-4 .col-md-4 a {
+  margin-top: 10px;
+}
+
 
 /* RESPONSIVE SCALING */
 /* DO NOT TAMPER WITH THIS(UNLESS YOU KNOW WHAT YOU ARE DOING)! */
 
 @media (min-width: 1516px) {
-  .content-2 .col-md-8, .content-2 .col-md-4 {
+  .content-3 .col-md-8, .content-3 .col-md-4 {
   	padding-left: 250px;
     padding-right: 250px;
     padding-top: 50px;
