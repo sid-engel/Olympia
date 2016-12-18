@@ -1,12 +1,12 @@
 /*
--- Olympia Specific CSS Modifications --
-README!
-Welcome to the CSS modofication file for the theme. This is where you will customize the theme to your liking.
+-----  Olympia Specific CSS Modifications   -----
+Welcome to the CSS modification file for the theme. This is where you will customize the theme to your liking.
 The data in which each Content-x holds is pretty self explainatory, hopefully the CSS item names are too.
+Best of luck, young padawan.
+-------------------------------------------------
 */
 
-
-/*Overall Scheme*/
+/* Global Scheme */
 
 .glyph-profile {
     text-align: center;
@@ -32,26 +32,7 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
     color: #333;
 }
 
-.rotate {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-    overflow: hidden;
-}
-
-.rotate:hover {
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-}
-
-
-/*Heading Modifier*/
+/* Heading Modifier */
 
 hr.primary-header {
     border: 0;
@@ -98,6 +79,25 @@ hr.secondary-header {
     border: 2px solid white;
 }
 
+/* Animation */
+
+.rotate {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+}
+
+.rotate:hover {
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+}
 
 /* NAVBAR */
 
@@ -300,7 +300,7 @@ hr.secondary-header {
     background-color: #0b193d;
     padding-bottom: 20px;
     margin-bottom: 0px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .footer .col-md-6 {
@@ -310,6 +310,7 @@ hr.secondary-header {
 .footer p {
     color: white;
     text-align: center;
+    font-size: 16px;
 }
 
 .footer li {
