@@ -23,16 +23,6 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
     border-top: solid 8px lightgrey;
 }
 
-.top-to-bottom {
-    padding: 20px 25px;
-    margin-left: 40px auto;
-    margin-right: 40px auto;
-    background-image: radial-gradient(#0b193d, #FFF), radial-gradient(#0b193d, #FFF);
-    background-size: 2px 100%;
-    background-position: 0 0, 100% 0;
-    background-repeat: no-repeat;
-}
-
 .large-text {
     font-size: 34px;
 }
@@ -40,6 +30,24 @@ The data in which each Content-x holds is pretty self explainatory, hopefully th
 .small-text {
     font-size: 14px;
     color: #333;
+}
+
+.rotate {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+}
+
+.rotate:hover {
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
 }
 
 
@@ -225,12 +233,6 @@ hr.secondary-header {
     margin-bottom: 20px;
 }
 
-.content-4 .list-group-item {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .content-4 h2 {
     font-size: 35px;
 }
@@ -238,7 +240,85 @@ hr.secondary-header {
 
 /* Content-5 */
 
+.content-5 {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background-color: #ececec;
+}
 
+.content-5 .row {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+}
+
+.content-5 h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.content-5 img {
+    border: 12px solid white;
+}
+
+
+/* Content-6 */
+
+.content-6 {
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.content-6 .col-md-6 {
+    margin-left: 25%;
+}
+
+.content-6 h2 {
+    padding-bottom: 40px;
+}
+
+.content-6 button {
+    margin-top: 20px;
+}
+
+.form-area {
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #0b193d;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+}
+
+.footer .col-md-6 {
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+}
+
+.footer li {
+    display: inline-block;
+}
+
+.footer a {
+    color: white;
+}
 
 
 /* RESPONSIVE SCALING */
@@ -252,5 +332,19 @@ hr.secondary-header {
         padding-right: 250px;
         padding-top: 50px;
         padding-bottom: 10px;
+    }
+    .content-4 .list-group-item {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-to-bottom {
+        padding: 20px 25px;
+        margin-left: 40px auto;
+        margin-right: 40px auto;
+        background-image: radial-gradient(#0b193d, #FFF), radial-gradient(#0b193d, #FFF);
+        background-size: 1px 100%;
+        background-position: 0 0, 100% 0;
+        background-repeat: no-repeat;
     }
 }

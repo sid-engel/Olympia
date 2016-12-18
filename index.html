@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="An epic one-page Bootstrap theme.">
     <meta name="author" content="Sid Engel">
-    <div class="test">
-        <p>test</p>
-    </div>
     <title>Olympia - Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
@@ -56,6 +53,9 @@
                         <a class="page-scroll" href="#pricing">Pricing</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -72,7 +72,7 @@
             <h1>Welcome To Olympia.</h1>
             <p style="padding-bottom: 10px;">The most responsive, and diverse Bootstrap template you can get your hands on.</p>
             <br>
-            < <a class="btn btn-success btn-lg" href="http://www.github.com/sid-engel"><span class="glyphicon glyphicon-file"></span> Github</a>
+            <a class="btn btn-success btn-lg" href="http://www.github.com/sid-engel"><span class="glyphicon glyphicon-file"></span> Github</a>
         </div>
     </div>
 
@@ -123,7 +123,7 @@
                 <p>Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae
                     viverra.
                 </p>
-                <p>Morbi molestie mollis molestie.</p>
+                <p id="pricing">Morbi molestie mollis molestie.</p>
                 <br>
                 <a class="btn btn-success btn-lg" href="#"><span class="glyphicon glyphicon-file"></span> Contact</a>
             </div>
@@ -139,51 +139,150 @@
                 <hr class="secondary-header">
                 <p class="large-text" style="color: green;">10$<span class="small-text">/MONTH</span></p>
                 <ul class="list-group">
-                  <li class="list-group-item">60 Users</li>
-                  <li class="list-group-item">Unlimited Forums</li>
-                  <li class="list-group-item">Unlimited Reports</li>
-                  <li class="list-group-item">3,000 Entries per Month</li>
-                  <li class="list-group-item">200mb Storage</li>
-                  <li class="list-group-item">Unlimited Support</li>
+                    <li class="list-group-item">60 Users</li>
+                    <li class="list-group-item">Unlimited Forums</li>
+                    <li class="list-group-item">Unlimited Reports</li>
+                    <li class="list-group-item">3,000 Entries per Month</li>
+                    <li class="list-group-item">200mb Storage</li>
+                    <li class="list-group-item">Unlimited Support</li>
                 </ul>
                 <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
             </div>
-            <div class="col-md-4 top-to-bottom" id="pricing">
+            <div class="col-md-4 top-to-bottom">
                 <span class="glyphicon glyphicon-tags glyph-price"></span>
                 <h2>Advanced</h2>
                 <hr class="secondary-header">
                 <p class="large-text" style="color: green;">20$<span class="small-text">/MONTH</span></p>
                 <ul class="list-group">
-                  <li class="list-group-item"><b>60</b> Users</li>
-                  <li class="list-group-item">Unlimited Forums</li>
-                  <li class="list-group-item">Unlimited Reports</li>
-                  <li class="list-group-item"><b>3,000</b> Entries per Month</li>
-                  <li class="list-group-item"><b>200mb</b> Storage</li>
-                  <li class="list-group-item">Unlimited Support</li>
+                    <li class="list-group-item"><b>60</b> Users</li>
+                    <li class="list-group-item">Unlimited Forums</li>
+                    <li class="list-group-item">Unlimited Reports</li>
+                    <li class="list-group-item"><b>3,000</b> Entries per Month</li>
+                    <li class="list-group-item"><b>200mb</b> Storage</li>
+                    <li class="list-group-item">Unlimited Support</li>
                 </ul>
                 <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
             </div>
             <div class="col-md-4">
-              <span class="glyphicon glyphicon-book glyph-price"></span>
-              <h2>Technical</h2>
-              <hr class="secondary-header">
-              <p class="large-text" style="color: green;">50$<span class="small-text">/MONTH</span></p>
-              <ul class="list-group">
-                <li class="list-group-item">60 Users</li>
-                <li class="list-group-item">Unlimited Forums</li>
-                <li class="list-group-item">Unlimited Reports</li>
-                <li class="list-group-item">3,000 Entries per Month</li>
-                <li class="list-group-item">200mb Storage</li>
-                <li class="list-group-item">Unlimited Support</li>
-              </ul>
+                <span class="glyphicon glyphicon-book glyph-price"></span>
+                <h2>Technical</h2>
+                <hr class="secondary-header">
+                <p class="large-text" style="color: green;">50$<span class="small-text">/MONTH</span></p>
+                <ul class="list-group">
+                    <li class="list-group-item">60 Users</li>
+                    <li class="list-group-item">Unlimited Forums</li>
+                    <li class="list-group-item">Unlimited Reports</li>
+                    <li class="list-group-item">3,000 Entries per Month</li>
+                    <li class="list-group-item">200mb Storage</li>
+                    <li class="list-group-item">Unlimited Support</li>
+                </ul>
                 <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
             </div>
         </div>
     </div>
 
-<!-- Content 5 -->
-    <div class="content-5 container-fluid">
+    <!-- Content 5 -->
+    <div class="content-5 container-fluid" id="portfolio">
+        <h2>Portfolio</h2>
+        <hr class="secondary-header" style="margin-bottom: 40px;">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="http://placehold.it/1280x720" class="img-responsive rotate">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="http://placehold.it/1280x720" class="img-responsive rotate">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="http://placehold.it/1280x720" class="img-responsive rotate">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="http://placehold.it/1280x720" class="img-responsive rotate">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="http://placehold.it/1280x720" class="img-responsive rotate">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="http://placehold.it/1280x720" class="img-responsive rotate">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="http://placehold.it/1280x720" class="img-responsive rotate">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <img src="http://placehold.it/1280x720" class="img-responsive rotate">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content-6 container-fluid" style="background-image: url(src/img/cave.jpg);" id="contact">
+        <div class="col-md-6">
+            <div class="form-area">
+                <h2>Contact</h2>
+                <hr class="secondary-header" style="margin-top: -35px;">
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" type="textarea" id="message" placeholder="Message"></textarea>
+                        <!-- Character Limit of 140 -->
+                        <!-- <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140"= rows="7"></textarea> -->
+                    </div>
 
+                    <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Created by <a href="http://www.sidengel.com">Sid Engel</a> | Open source, and available on <a href="http://www.github.com/sid-engel/olympia">GitHub</a></p>
+            </div>
+            <div class="col-md-6">
+                <ul class="navbar-bottom">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About | </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#pricing">Pricing | </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio | </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <p></p>
+            </div>
+
+        </div>
+    </div>
     </div>
 
     <!-- jQuery -->
