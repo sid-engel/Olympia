@@ -244,6 +244,7 @@ hr.secondary-header {
     padding-top: 30px;
     padding-bottom: 80px;
     background-color: #ececec;
+    border-bottom: 8px solid white;
 }
 
 .content-5 .row {
@@ -291,8 +292,6 @@ hr.secondary-header {
     padding-bottom: 100px;
     background-color: white;
     text-align: center;
-    margin-left: 180px;
-    margin-right: 180px;
 }
 
 
