@@ -16,7 +16,6 @@ h2, .large-text {
     font-size: 30px;
 }
 
-
 /* Paragraph Size Modifier */
 
 p, .small-text {
@@ -128,27 +127,29 @@ As of now, this is only on the portfolio image rotation.
 /* Navbar Modifier */
 
 .navbar {
-    background-color: #e5e5e5;
-    border: none;
+    background-color: #ececec;
+    border-bottom: 4px solid #333333;
+}
+
+.navbar-collapse {
+  border: none;
 }
 
 .navbar .navbar-brand {
-    background-color: #0b193d;
-    color: white;
+    color: #333333;
 }
 
 .navbar .navbar-brand:hover {
-    background-color: #0b193d;
-    color: white;
+    color: #878787;
 }
 
 .navbar .nav li a {
-    color: #0b193d;
+    color: #333333;
+    font-size: 16px;
 }
 
 .navbar .nav li a:hover {
-    background-color: #0b193d;
-    color: white;
+    color: #878787;
 }
 
 
@@ -247,6 +248,7 @@ As of now, this is only on the portfolio image rotation.
     padding-bottom: 20px;
 }
 
+
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this...
  */
@@ -269,6 +271,7 @@ Should probably not mess with this...
     margin-bottom: 20px;
 }
 
+
 /* Content-5 */
 
 .content-5 {
@@ -276,6 +279,7 @@ Should probably not mess with this...
     padding-bottom: 80px;
     background-color: #ececec;
 }
+
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this...
@@ -291,6 +295,7 @@ Should probably not mess with this...
     text-align: center;
 }
 
+
 /* Image Border Modifier */
 
 .content-5 img {
@@ -299,6 +304,7 @@ Should probably not mess with this...
 
 
 /* Content-6 */
+
 
 /* Image Size and Position Modifier */
 
@@ -310,6 +316,7 @@ Should probably not mess with this...
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this...
@@ -334,6 +341,7 @@ Should probably not mess with this...
     background-color: white;
     text-align: center;
 }
+
 
 /* Message Height Modifier */
 

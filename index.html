@@ -11,8 +11,17 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/css/scrolling-nav.css" rel="stylesheet">
     <!-- Theme CSS -->
     <link href="src/css/theme.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script type="text/javascript" src="src/js/jquery.min.js"></script>
+    <script src="src/js/jquery.easing.min.js"></script>
+    <script src="src/js/scrolling-nav.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="src/js/bootstrap.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,40 +35,39 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
                 <a class="navbar-brand page-scroll" href="#page-top">Olympia</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#content-3">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pricing">Pricing</a>
+                        <a class="page-scroll" href="#content-4">Pricing</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#content-5">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#content-6">Contact</a>
                     </li>
                 </ul>
-            </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -75,7 +83,6 @@
             <a class="btn btn-success btn-lg" href="http://www.github.com/sid-engel"><span class="glyphicon glyphicon-file"></span> Github</a>
         </div>
     </div>
-
     <!-- Content 2 -->
     <div class="content-2 container-fluid">
         <div class="row">
@@ -83,7 +90,7 @@
                 <span class="glyphicon glyphicon-piggy-bank glyph-profile"></span>
                 <h2 class="large-text">Cost-Effective</h2>
                 <hr class="secondary-header">
-                <p id="about">Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae
+                <p>Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae
                     viverra.
                 </p>
                 <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Pricing</a>
@@ -104,11 +111,11 @@
                 <p>Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae
                     viverra.
                 </p>
-                <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Contact</a>
+                <a class="btn btn-primary btn-lg page-scroll" href="#contact" id="content-3">Contact</a>
             </div>
         </div>
     </div>
-
+</section>
     <!-- Content 3 -->
     <div class="content-3 container-fluid">
         <div class="row">
@@ -123,15 +130,15 @@
                 <p>Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae
                     viverra.
                 </p>
-                <p id="pricing">Morbi molestie mollis molestie.</p>
+                <p>Morbi molestie mollis molestie.</p>
                 <br>
-                <a class="btn btn-success btn-lg" href="#"><span class="glyphicon glyphicon-file"></span> Contact</a>
+                <a class="btn btn-success btn-lg" href="#"><span class="glyphicon glyphicon-file" id="content-4"></span> Contact</a>
             </div>
         </div>
     </div>
 
     <!-- Content 4 -->
-    <div class="content-4 container-fluid  border-top">
+    <div class="content-4 container-fluid border-top" id="content-4">
         <div class="row">
             <div class="col-md-4">
                 <span class="glyphicon glyphicon-picture glyph-price"></span>
@@ -176,13 +183,13 @@
                     <li class="list-group-item">200mb Storage</li>
                     <li class="list-group-item">Unlimited Support</li>
                 </ul>
-                <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
+                <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel "id="content-5">Purchase</a>
             </div>
         </div>
     </div>
 
     <!-- Content 5 -->
-    <div class="content-5 container-fluid border-bottom" id="portfolio">
+    <div class="content-5 container-fluid border-bottom">
         <h2>Portfolio</h2>
         <hr class="secondary-header" style="margin-bottom: 40px;">
         <div class="row">
@@ -230,8 +237,8 @@
             </div>
         </div>
     </div>
-    <div class="content-6 container-fluid" style="background-image: url(src/img/cave.jpg);" id="contact">
-        <div class="col-md-6">
+    <div class="content-6 container-fluid" style="background-image: url(src/img/cave.jpg);">
+        <div class="col-md-6" id="content-6">
             <div class="form-area">
                 <h2>Contact</h2>
                 <hr class="secondary-header" style="margin-top: -35px;">
@@ -248,7 +255,7 @@
                         <!-- <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140"= rows="7"></textarea> -->
                     </div>
 
-                    <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Send Message</button>
+                    <button type="button" id="submit" name="submit" class="btn btn-lg btn-primary pull-right">Send Message</button>
                 </form>
             </div>
         </div>
@@ -282,16 +289,6 @@
 
         </div>
     </div>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-
 </body>
 
 </html>
