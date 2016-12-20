@@ -6,52 +6,25 @@ Best of luck, young padawan.
 -------------------------------------------------
 */
 
-/* Global Scheme */
 
-.glyph-profile {
-    text-align: center;
-    font-size: 100px;
+/* -----  Olympia GLOBAL CSS Modifications   ----- */
+
+
+/* Heading Size Modifier */
+
+h2, .large-text {
+    font-size: 30px;
 }
 
-.glyph-price {
-    text-align: center;
-    font-size: 75px;
-    font-color: #333;
-}
 
-.border-top {
-    border-top: solid 8px lightgrey;
-}
+/* Paragraph Size Modifier */
 
-.large-text {
-    font-size: 34px;
-}
-
-.small-text {
+p, .small-text {
     font-size: 14px;
-    color: #333;
-}
-
-/* Heading Modifier */
-
-hr.primary-header {
-    border: 0;
-    height: 2px;
-    background-color: white;
-    width: 185px;
-    margin-top: -10px;
-}
-
-hr.secondary-header {
-    border: 0;
-    height: 2px;
-    background-color: #333;
-    width: 100px;
-    margin-top: 10px;
 }
 
 
-/* Buttons */
+/* Button Modifier */
 
 .btn-primary {
     background-color: transparent;
@@ -79,7 +52,59 @@ hr.secondary-header {
     border: 2px solid white;
 }
 
-/* Animation */
+
+/* Bottom Border Modifier
+The small Under/Upper lines on content-2, and content-5.
+*/
+
+.border-top {
+    border-top: solid 8px lightgrey;
+}
+
+.border-bottom {
+    border-bottom: 8px solid white;
+}
+
+
+/* Heading Underline Modifier */
+
+hr.secondary-header {
+    border: 0;
+    height: 2px;
+    background-color: #333;
+    width: 100px;
+    margin-top: 10px;
+}
+
+hr.primary-header {
+    border: 0;
+    height: 2px;
+    background-color: white;
+    width: 185px;
+    margin-top: -10px;
+}
+
+
+/* Glyph Size Modifier
+Icon adjustment for content-2 and content-4
+*/
+
+.glyph-profile {
+    text-align: center;
+    font-size: 100px;
+}
+
+.glyph-price {
+    text-align: center;
+    font-size: 75px;
+    font-color: #333;
+}
+
+
+/* Animation
+Should most likely, not mess with this.
+As of now, this is only on the portfolio image rotation.
+*/
 
 .rotate {
     -webkit-transition-duration: 0.8s;
@@ -99,7 +124,8 @@ hr.secondary-header {
     -o-transform: rotate(2deg);
 }
 
-/* NAVBAR */
+
+/* Navbar Modifier */
 
 .navbar {
     background-color: #e5e5e5;
@@ -126,7 +152,7 @@ hr.secondary-header {
 }
 
 
-/*Content 1*/
+/* Content 1 */
 
 .content-1 {
     text-align: center;
@@ -134,11 +160,14 @@ hr.secondary-header {
 }
 
 .content-1 .jumbotron {
-    /*Paralax Effect */
+    /* Paralax Effect
+    Should probably not mess with this...
+    */
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    /* Background-Image Padding */
     padding-top: 250px;
     padding-bottom: 250px
 }
@@ -187,6 +216,9 @@ hr.secondary-header {
     padding-bottom: 50px !important;
 }
 
+
+/* Image Size and Position Modifier */
+
 .content-3 .col-md-4 img {
     max-width: none !important;
     width: 300px;
@@ -215,6 +247,10 @@ hr.secondary-header {
     padding-bottom: 20px;
 }
 
+/* Column Margin/Spacing Adjustment
+Should probably not mess with this...
+ */
+
 .content-4 .col-md-4 {
     text-align: center;
     padding-top: 30px;
@@ -233,19 +269,17 @@ hr.secondary-header {
     margin-bottom: 20px;
 }
 
-.content-4 h2 {
-    font-size: 35px;
-}
-
-
 /* Content-5 */
 
 .content-5 {
     padding-top: 30px;
     padding-bottom: 80px;
     background-color: #ececec;
-    border-bottom: 8px solid white;
 }
+
+/* Column Margin/Spacing Adjustment
+Should probably not mess with this...
+ */
 
 .content-5 .row {
     margin-left: 20px;
@@ -255,8 +289,9 @@ hr.secondary-header {
 
 .content-5 h2 {
     text-align: center;
-    font-size: 35px;
 }
+
+/* Image Border Modifier */
 
 .content-5 img {
     border: 12px solid white;
@@ -264,6 +299,8 @@ hr.secondary-header {
 
 
 /* Content-6 */
+
+/* Image Size and Position Modifier */
 
 .content-6 {
     background-attachment: fixed;
@@ -273,6 +310,10 @@ hr.secondary-header {
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
+/* Column Margin/Spacing Adjustment
+Should probably not mess with this...
+ */
 
 .content-6 .col-md-6 {
     margin-left: 25%;
@@ -292,6 +333,12 @@ hr.secondary-header {
     padding-bottom: 100px;
     background-color: white;
     text-align: center;
+}
+
+/* Message Height Modifier */
+
+.message-area {
+    padding-bottom: 250px;
 }
 
 
