@@ -99,40 +99,12 @@ Icon adjustment for content-2 and content-4
     font-color: #333;
 }
 
-
-/* Animation
-Should most likely, not mess with this.
-As of now, this is only on the portfolio image rotation.
-*/
-
-.rotate {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-    overflow: hidden;
-}
-
-.rotate:hover {
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-}
-
-
 /* Navbar Modifier */
 
 .navbar {
-    background-color: #ececec;
-    border-bottom: 4px solid #333333;
-}
-
-.navbar-collapse {
-  border: none;
+    background-color: #e3e3e3;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .navbar .navbar-brand {
@@ -172,7 +144,6 @@ As of now, this is only on the portfolio image rotation.
     padding-top: 250px;
     padding-bottom: 250px
 }
-
 
 /*Content 2 */
 
@@ -302,10 +273,7 @@ Should probably not mess with this...
     border: 12px solid white;
 }
 
-
 /* Content-6 */
-
-
 /* Image Size and Position Modifier */
 
 .content-6 {
@@ -354,29 +322,20 @@ Should probably not mess with this...
 
 .footer {
     background-color: #0b193d;
-    padding-bottom: 20px;
-    margin-bottom: 0px;
-    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-top: -1px;
+    padding-top: 22px;
 }
 
 .footer .col-md-6 {
     text-align: center;
 }
 
-.footer p {
+.footer p, .footer a {
     color: white;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
 }
-
-.footer li {
-    display: inline-block;
-}
-
-.footer a {
-    color: white;
-}
-
 
 /* RESPONSIVE SCALING */
 
@@ -390,11 +349,13 @@ Should probably not mess with this...
         padding-top: 50px;
         padding-bottom: 10px;
     }
+
     .content-4 .list-group-item {
         width: 400px;
         margin-left: auto;
         margin-right: auto;
     }
+
     .top-to-bottom {
         padding: 20px 25px;
         margin-left: 40px auto;
@@ -403,5 +364,8 @@ Should probably not mess with this...
         background-size: 1px 100%;
         background-position: 0 0, 100% 0;
         background-repeat: no-repeat;
+        }
+        .sub-footer .row {
+          margin-left: 25%;
     }
 }
