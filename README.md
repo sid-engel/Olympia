@@ -22,5 +22,10 @@ https://www.sidengel.com<br>
 https://twitter.com/sid_engel<br>
 https://github.com/sid-engel<br>
 
-<b>Olympia was made with the Bootstrap framework created by Mark Otto and Jacob Thorton.</b>
-http://www.getbootstrap.com
+<h2>Plugins and Librarys</h2>
+
+<b>Twitter Bootstrap(and it's components</b>
+http://www.getbootstrap.com<br>
+
+<b>Affect on Scroll</b>
+https://github.com/michalsnik/aos<br>

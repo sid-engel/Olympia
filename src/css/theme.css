@@ -337,6 +337,13 @@ Should probably not mess with this...
     font-size: 14px;
 }
 
+/* ROTATION FOR PROFILE SECTION */
+/*Do not tamper with this*/
+.rotate:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 /* RESPONSIVE SCALING */
 
 
