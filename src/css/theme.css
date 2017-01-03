@@ -16,6 +16,7 @@ h2, .large-text {
     font-size: 30px;
 }
 
+
 /* Paragraph Size Modifier */
 
 p, .small-text {
@@ -99,6 +100,7 @@ Icon adjustment for content-2 and content-4
     font-color: #333;
 }
 
+
 /* Navbar Modifier */
 
 .navbar {
@@ -144,6 +146,7 @@ Icon adjustment for content-2 and content-4
     padding-top: 250px;
     padding-bottom: 250px
 }
+
 
 /*Content 2 */
 
@@ -273,7 +276,10 @@ Should probably not mess with this...
     border: 12px solid white;
 }
 
+
 /* Content-6 */
+
+
 /* Image Size and Position Modifier */
 
 .content-6 {
@@ -337,12 +343,17 @@ Should probably not mess with this...
     font-size: 14px;
 }
 
+
 /* ROTATION FOR PROFILE SECTION */
+
+
 /*Do not tamper with this*/
+
 .rotate:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
+
 
 /* RESPONSIVE SCALING */
 
@@ -356,13 +367,11 @@ Should probably not mess with this...
         padding-top: 50px;
         padding-bottom: 10px;
     }
-
     .content-4 .list-group-item {
         width: 400px;
         margin-left: auto;
         margin-right: auto;
     }
-
     .top-to-bottom {
         padding: 20px 25px;
         margin-left: 40px auto;
@@ -371,8 +380,8 @@ Should probably not mess with this...
         background-size: 1px 100%;
         background-position: 0 0, 100% 0;
         background-repeat: no-repeat;
-        }
-        .sub-footer .row {
-          margin-left: 25%;
+    }
+    .sub-footer .row {
+        margin-left: 25%;
     }
 }
