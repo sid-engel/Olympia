@@ -147,6 +147,10 @@ Icon adjustment for content-2 and content-4
     padding-bottom: 250px
 }
 
+.content-1 img {
+  box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, 1);
+}
+
 
 /*Content 2 */
 
@@ -160,6 +164,10 @@ Icon adjustment for content-2 and content-4
     text-align: center;
     padding-top: 50px;
     padding-bottom: 40px;
+}
+
+.content-2 img {
+    max-width: 100px;
 }
 
 .content-2 .col-md-4 p {
@@ -196,8 +204,12 @@ Icon adjustment for content-2 and content-4
 
 .content-3 .col-md-4 img {
     max-width: none !important;
-    width: 300px;
-    padding-top: 20px;
+    position: fixed;
+    top: 20px;
+    width: 700px;
+    margin-left: -300px;
+    margin-bottom: -10px;
+    padding-right: 20px;
 }
 
 .content-3 .col-md-8 a {
@@ -305,13 +317,13 @@ Should probably not mess with this...
 }
 
 .content-6 button {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .form-area {
     padding: 50px;
     padding-top: 30px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
     background-color: white;
     text-align: center;
 }
@@ -320,7 +332,7 @@ Should probably not mess with this...
 /* Message Height Modifier */
 
 .message-area {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 
