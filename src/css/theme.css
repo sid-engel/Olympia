@@ -284,9 +284,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-.content-6 .col-md-6 {
-    margin-left: 25%;
-}
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
@@ -348,4 +345,14 @@ Should probably not mess with this... */
     .sub-footer .row {
         margin-left: 25%;
     }
-}
+  }
+    @media (max-width: 992px) {
+      .content-3 .col-md-4 {
+        display: none;
+      }
+    }
+    @media (min-width: 992px) {
+      .content-6 .col-md-6 {
+          margin-left: 25%;
+      }
+    }
