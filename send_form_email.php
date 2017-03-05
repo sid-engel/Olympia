@@ -3,11 +3,11 @@
 $myemail  = "your@email.com";
 
 /* Check all form inputs using check_input function */
-if (isset($_POST["submit"])) {
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$cords = $_POST['cords'];
+if (isset($_GET["submit"])) {
+$name = $_GET['name'];
+$email = $_GET['email'];
+$message = $_GET['message'];
+$cords = $_GET['cords'];
 }
 else {
   echo $myError;
