@@ -330,6 +330,19 @@ Should probably not mess with this... */
     font-size: 14px;
 }
 
+/* Footer Icon Modifier */
+.footer .icon {
+  color: white;
+  font-size: 24px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.footer .icon:hover {
+transform: rotate(9deg);
+transition: 400ms ease all;
+}
+
 /* RESPONSIVE SCALING */
 /* DO NOT TAMPER WITH THIS(UNLESS YOU KNOW WHAT YOU ARE DOING)! */
 

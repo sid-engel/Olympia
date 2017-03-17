@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require_once('path/query.class.php');
+?>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +18,9 @@
     <!-- AOS -->
     <link href="src/css/aos.css" rel="stylesheet">
     <script src="src/js/aos.js"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://use.fontawesome.com/509644e2f4.js"></script>
 
     <!-- jQuery -->
     <script type="text/javascript" src="src/js/jquery.min.js"></script>
@@ -103,109 +108,111 @@
 
     <div class="content-2 container-fluid">
         <div class="row">
-          <div data-aos="fade" data-aos-duration="1200" data-aos-once="true">
-            <div class="col-md-4">
-                <img src="src/img/Iron-Sword-icon.png">
-                <h2 class="large-text">Survival</h2>
-                <hr class="secondary-header">
-                <p>This is placeholder text. You should replace this with your own content. <b>Morbi molestie mollis molestie.</b> Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae viverra.
-                </p>
-                <a class="btn btn-primary btn-lg" href="#">Connect</a>
-            </div>
-            <div class="col-md-4">
-                <img src="src/img/Minecraft-grass-icon.png">
-                <h2>Creative</h2>
-                <hr class="secondary-header">
-                <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. <b>Aenean viverra risus sed ullamcorper blandit.</b> Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae viverra.
-                </p>
-                <a class="btn btn-primary btn-lg" href="#">Connect</a>
-            </div>
-            <div class="col-md-4">
-                <img src="src/img/endericon.png">
-                <h2>Skyblock</h2>
-                <hr class="secondary-header">
-                <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. <b>Integer ultricies sapien sed ornare ornare.</b> Suspendisse finibus non sem vitae viverra.
-                </p>
-                <section id="content-3">
-                <a class="btn btn-primary btn-lg" href="#">Connect</a>
+            <div data-aos="fade" data-aos-duration="1200" data-aos-once="true">
+                <div class="col-md-4">
+                    <img src="src/img/Iron-Sword-icon.png">
+                    <h2 class="large-text">Survival</h2>
+                    <hr class="secondary-header">
+                    <p>This is placeholder text. You should replace this with your own content. <b>Morbi molestie mollis molestie.</b> Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed
+                        ornare ornare. Suspendisse finibus non sem vitae viverra.
+                    </p>
+                    <a class="btn btn-primary btn-lg" href="#">Connect</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="src/img/Minecraft-grass-icon.png">
+                    <h2>Creative</h2>
+                    <hr class="secondary-header">
+                    <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. <b>Aenean viverra risus sed ullamcorper blandit.</b> Integer ultricies sapien sed
+                        ornare ornare. Suspendisse finibus non sem vitae viverra.
+                    </p>
+                    <a class="btn btn-primary btn-lg" href="#">Connect</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="src/img/endericon.png">
+                    <h2>Skyblock</h2>
+                    <hr class="secondary-header">
+                    <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. <b>Integer ultricies sapien sed ornare ornare.</b>                        Suspendisse finibus non sem vitae viverra.
+                    </p>
+                    <section id="content-3">
+                        <a class="btn btn-primary btn-lg" href="#">Connect</a>
+                </div>
             </div>
         </div>
-      </div>
     </div>
 
     <!-- Content 3 -->
-        <div class="content-3 container-fluid">
-            <div class="row">
-                <div class="col-md-4 hidden-sm-down" data-aos="fade-right" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-once="true">
-                    <img src="src\img\profile.png" alt="Image failed to load...">
-                </div>
-                <div class="col-md-8 hidden-sm-down" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-once="true">
-                    <h2>What is OlympiaMc?</h2>
-                    <hr class="primary-header">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies
-                        sapien sed ornare ornare. Suspendisse finibus non sem vitae viverra.</p>
-                    <p>Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae
-                        viverra.
-                    </p>
-                    <p>Morbi molestie mollis molestie.</p>
-                    <section id="content-4">
+    <div class="content-3 container-fluid">
+        <div class="row">
+            <div class="col-md-4 hidden-sm-down" data-aos="fade-right" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                <img src="src\img\profile.png" alt="Image failed to load...">
+            </div>
+            <div class="col-md-8 hidden-sm-down" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+                <h2>What is OlympiaMc?</h2>
+                <hr class="primary-header">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien
+                    sed ornare ornare. Suspendisse finibus non sem vitae viverra.</p>
+                <p>Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae
+                    viverra.
+                </p>
+                <p>Morbi molestie mollis molestie.</p>
+                <section id="content-4">
                     <br>
-                </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- Content 4 -->
 
-        <div class="content-4 container-fluid border-top" id="content-4">
-            <div class="row">
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-once="true">
-                    <span class="glyphicon glyphicon-picture glyph-price"></span>
-                    <h2>Vip</h2>
-                    <hr class="secondary-header">
-                    <p class="large-text" style="color: green;">2$<span class="small-text">/MONTH</span></p>
-                    <ul class="list-group">
-                        <li class="list-group-item">60 Users</li>
-                        <li class="list-group-item">Unlimited Forums</li>
-                        <li class="list-group-item">Unlimited Reports</li>
-                        <li class="list-group-item">3,000 Entries per Month</li>
-                        <li class="list-group-item">200mb Storage</li>
-                        <li class="list-group-item">Unlimited Support</li>
-                    </ul>
-                    <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="250" data-aos-once="true">
-                    <span class="glyphicon glyphicon-tags glyph-price"></span>
-                    <h2>Vip+</h2>
-                    <hr class="secondary-header">
-                    <p class="large-text" style="color: green;">5$<span class="small-text">/MONTH</span></p>
-                    <ul class="list-group">
-                        <li class="list-group-item"><b>60</b> Users</li>
-                        <li class="list-group-item">Unlimited Forums</li>
-                        <li class="list-group-item">Unlimited Reports</li>
-                        <li class="list-group-item"><b>3,000</b> Entries per Month</li>
-                        <li class="list-group-item"><b>200mb</b> Storage</li>
-                        <li class="list-group-item">Unlimited Support</li>
-                    </ul>
-                    <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="350" data-aos-once="true">
-                    <span class="glyphicon glyphicon-book glyph-price"></span>
-                    <h2>Vip++</h2>
-                    <hr class="secondary-header">
-                    <p class="large-text" style="color: green;">10$<span class="small-text">/MONTH</span></p>
-                    <ul class="list-group">
-                        <li class="list-group-item">60 Users</li>
-                        <li class="list-group-item">Unlimited Forums</li>
-                        <li class="list-group-item">Unlimited Reports</li>
-                        <li class="list-group-item">3,000 Entries per Month</li>
-                        <li class="list-group-item">200mb Storage</li>
-                        <li class="list-group-item">Unlimited Support</li>
-                    </ul>
-                    <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel " id="content-5">Purchase</a>
-                </div>
+    <div class="content-4 container-fluid border-top" id="content-4">
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-once="true">
+                <span class="glyphicon glyphicon-picture glyph-price"></span>
+                <h2>Vip</h2>
+                <hr class="secondary-header">
+                <p class="large-text" style="color: green;">2$<span class="small-text">/MONTH</span></p>
+                <ul class="list-group">
+                    <li class="list-group-item">60 Users</li>
+                    <li class="list-group-item">Unlimited Forums</li>
+                    <li class="list-group-item">Unlimited Reports</li>
+                    <li class="list-group-item">3,000 Entries per Month</li>
+                    <li class="list-group-item">200mb Storage</li>
+                    <li class="list-group-item">Unlimited Support</li>
+                </ul>
+                <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="250" data-aos-once="true">
+                <span class="glyphicon glyphicon-tags glyph-price"></span>
+                <h2>Vip+</h2>
+                <hr class="secondary-header">
+                <p class="large-text" style="color: green;">5$<span class="small-text">/MONTH</span></p>
+                <ul class="list-group">
+                    <li class="list-group-item"><b>60</b> Users</li>
+                    <li class="list-group-item">Unlimited Forums</li>
+                    <li class="list-group-item">Unlimited Reports</li>
+                    <li class="list-group-item"><b>3,000</b> Entries per Month</li>
+                    <li class="list-group-item"><b>200mb</b> Storage</li>
+                    <li class="list-group-item">Unlimited Support</li>
+                </ul>
+                <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="350" data-aos-once="true">
+                <span class="glyphicon glyphicon-book glyph-price"></span>
+                <h2>Vip++</h2>
+                <hr class="secondary-header">
+                <p class="large-text" style="color: green;">10$<span class="small-text">/MONTH</span></p>
+                <ul class="list-group">
+                    <li class="list-group-item">60 Users</li>
+                    <li class="list-group-item">Unlimited Forums</li>
+                    <li class="list-group-item">Unlimited Reports</li>
+                    <li class="list-group-item">3,000 Entries per Month</li>
+                    <li class="list-group-item">200mb Storage</li>
+                    <li class="list-group-item">Unlimited Support</li>
+                </ul>
+                <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel " id="content-5">Purchase</a>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- Content 5 -->
@@ -294,14 +301,18 @@
     <div class="footer container-fluid">
         <div class="row">
             <div class="col-md-6">
-                <p>©2016 All rights reserved. Created with love by <a href="http://www.sidengel.com">Sid Engel</a>.</p>
+              <p>Created with <i class="fa fa-heart icon" aria-hidden="true" style="color: red; font-size: 18px; "></i> by <a href="http://www.sidengel.com">Sid Engel</a>.</p>
             </div>
             <div class="col-md-6">
-                <p><a href="#">Legal Notice</a></p>
+              <a href="https://twitter.com/sid_engel"><i class="fa fa-twitter icon" aria-hidden="true"></i></a>
+              <a href="mailto:info@sidengel.com?Subject=OlympiaMc%20Demo%Page"><i class="fa fa-envelope-o icon" aria-hidden="true"></i></a>
+              <a href="https://www.github.com/sid-engel"><i class="fa fa-github icon" aria-hidden="true"></i></a>
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AR2SJJ6MPXM3E"><i class="fa fa-paypal icon" aria-hidden="true"></i></a>
+
             </div>
 
         </div>
     </div>
 </body>
 
-</html>
+</php>
