@@ -1,4 +1,4 @@
-<b>Olympia is a one page theme for Bootstrap created by, Sid Engel.</b>
+<b>Olympia is a one page "MC Server" theme for Bootstrap created by, Sid Engel.</b>
 
 
 <h2>Getting Started</h2>
@@ -29,3 +29,8 @@ http://www.getbootstrap.com<br>
 
 <b>Affect on Scroll</b>
 https://github.com/michalsnik/aos<br>
+
+<b>Font Awesome</b>
+http://fontawesome.io<br>
+
+<h3 style="color: red;">More details can be found on https://www.spigotmc.org/resources/olympia-onepage-bootstrap-template.37155/</h3>
