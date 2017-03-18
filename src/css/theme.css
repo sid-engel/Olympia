@@ -55,6 +55,7 @@ p, .small-text {
 
 /* Border Modifier
 The small grey line under content-3... */
+
 .border-top {
     border-top: solid 8px lightgrey;
 }
@@ -62,6 +63,7 @@ The small grey line under content-3... */
 
 /* Heading Underline Modifier */
 /* Underlines on headings, like under the about header, and vip titles. */
+
 hr.secondary-header {
     border: 0;
     height: 2px;
@@ -81,6 +83,7 @@ hr.primary-header {
 
 /* Glyph Size Modifier
 Icon adjustment for content-2 and content-4 */
+
 .glyph-profile {
     text-align: center;
     font-size: 100px;
@@ -92,12 +95,13 @@ Icon adjustment for content-2 and content-4 */
     font-color: #333;
 }
 
-
 /* Navbar Modifier */
+
 .navbar {
     background-color: #e3e3e3;
     padding-top: 4px;
     padding-bottom: 4px;
+    border: none !important;
 }
 
 .navbar .navbar-brand {
@@ -119,13 +123,16 @@ Icon adjustment for content-2 and content-4 */
 
 
 /* Content 1 */
+
 .content-1 {
     text-align: center;
     color: white;
 }
 
+
 /* Paralax Effect
 Should probably not mess with this... */
+
 .content-1 .jumbotron {
     background-attachment: fixed;
     background-position: center top;
@@ -138,33 +145,39 @@ Should probably not mess with this... */
 
 
 /* Content 2 */
+
 .content-2 {
     background-color: #f7f7f7;
     margin-top: -30px;
     padding-bottom: 40px;
 }
 
+
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .content-2 .col-md-4 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 40px;
 }
 
-
 .content-2 img {
     max-width: 100px;
 }
 
+
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .content-2 .col-md-4 p {
     margin-left: 80px;
     margin-right: 80px;
 }
 
+
 /* Content 3 */
+
 .content-3 {
     background-color: #0b193d;
     margin-top: -30px;
@@ -185,6 +198,7 @@ Should probably not mess with this... */
 
 /* Image Size and Position Modifier
 Should probably not mess with this... */
+
 .content-3 .col-md-4 img {
     max-width: none !important;
     position: fixed;
@@ -210,6 +224,7 @@ Should probably not mess with this... */
 
 
 /* Content 4 */
+
 .content-4 {
     background-color: #f7f7f7;
     margin-top: -30px;
@@ -219,6 +234,7 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .content-4 .col-md-4 {
     text-align: center;
     padding-top: 30px;
@@ -227,15 +243,19 @@ Should probably not mess with this... */
     text-align: center;
 }
 
+
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .content-4 .col-md-4 p {
     margin-left: 80px;
     margin-right: 80px;
 }
 
+
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .content-4 .col-md-4 a {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -243,6 +263,7 @@ Should probably not mess with this... */
 
 
 /* Content-5 */
+
 .content-5 {
     padding-top: 30px;
     padding-bottom: 60px;
@@ -252,6 +273,7 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .content-5 .row {
     margin-left: 20px;
     margin-right: 20px;
@@ -264,14 +286,18 @@ Should probably not mess with this... */
 
 
 /* Image Border Modifier */
+
 .content-5 img {
     border: 8px solid white;
 }
 
 
 /* Content-6 */
+
+
 /* Image Size and Position Modifier
 Should probably not mess with this... */
+
 .content-6 {
     background-attachment: fixed;
     background-position: center top;
@@ -284,19 +310,26 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .content-6 .col-md-6 {
     margin-left: 25%;
 }
 
+
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .content-6 h2 {
     padding-bottom: 40px;
 }
 
+
 /* Form Modifier */
+
+
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .form-area {
     padding: 50px;
     padding-top: 30px;
@@ -307,9 +340,11 @@ Should probably not mess with this... */
 
 
 /* Message Box Height */
+
 .message-area {
     padding-bottom: 100px;
 }
+
 
 /* Footer */
 
@@ -330,18 +365,21 @@ Should probably not mess with this... */
     font-size: 14px;
 }
 
+
 /* Footer Icon Modifier */
+
 .footer .icon {
-  color: white;
-  font-size: 24px;
-  padding-left: 3px;
-  padding-right: 3px;
+    color: white;
+    font-size: 24px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 .footer .icon:hover {
-transform: rotate(9deg);
-transition: 400ms ease all;
+    transform: rotate(9deg);
+    transition: 400ms ease all;
 }
+
 
 /* RESPONSIVE SCALING */
 /* DO NOT TAMPER WITH THIS(UNLESS YOU KNOW WHAT YOU ARE DOING)! */
