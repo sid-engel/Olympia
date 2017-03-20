@@ -301,13 +301,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-.content-6 .col-md-6 {
-    margin-left: 25%;
-}
-
-
-/* Column Margin/Spacing Adjustment
-Should probably not mess with this... */
 .content-6 h2 {
     padding-bottom: 40px;
 }
@@ -384,4 +377,12 @@ Should probably not mess with this... */
     .sub-footer .row {
         margin-left: 25%;
     }
+}
+
+@media(min-width: 992px) {
+  /* Column Margin/Spacing Adjustment
+  Should probably not mess with this... */
+  .content-6 .col-md-6 {
+      margin-left: 25%;
+  }
 }
