@@ -11,21 +11,18 @@ Best of luck, young padawan. - Sid Engel
 
 
 /* Heading Size Modifier */
-
 h2, .large-text {
     font-size: 30px;
 }
 
 
 /* Paragraph Size Modifier */
-
 p, .small-text {
     font-size: 14px;
 }
 
 
 /* Button Modifier */
-
 .btn-primary {
     background-color: transparent;
     color: #0b193d;
@@ -62,10 +59,7 @@ The small grey line under content-3... */
 
 
 /* Heading Underline Modifier */
-
-
 /* Underlines on headings, like under the about header, and vip titles. */
-
 hr.secondary-header {
     border: 0;
     height: 2px;
@@ -85,7 +79,6 @@ hr.primary-header {
 
 /* Glyph Size Modifier
 Icon adjustment for content-2 and content-4 */
-
 .glyph-profile {
     text-align: center;
     font-size: 100px;
@@ -99,7 +92,6 @@ Icon adjustment for content-2 and content-4 */
 
 
 /* Navbar Modifier */
-
 .navbar {
     background-color: #e3e3e3;
     border: none !important;
@@ -143,7 +135,6 @@ Icon adjustment for content-2 and content-4 */
 
 /* Paralax Effect
 Should probably not mess with this... */
-
 .content-1 .jumbotron {
     background-attachment: fixed;
     background-position: center top;
@@ -166,7 +157,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-
 .content-2 .col-md-4 {
     text-align: center;
     padding-top: 50px;
@@ -180,7 +170,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-
 .content-2 .col-md-4 p {
     margin-left: 80px;
     margin-right: 80px;
@@ -188,7 +177,6 @@ Should probably not mess with this... */
 
 
 /* Content 3 */
-
 .content-3 {
     background-color: #0b193d;
     margin-top: -30px;
@@ -209,7 +197,6 @@ Should probably not mess with this... */
 
 /* Image Size and Position Modifier
 Should probably not mess with this... */
-
 .content-3 .col-md-4 img {
     max-width: none !important;
     position: fixed;
@@ -245,7 +232,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-
 .content-4 .col-md-4 {
     text-align: center;
     padding-top: 30px;
@@ -257,7 +243,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-
 .content-4 .col-md-4 p {
     margin-left: 80px;
     margin-right: 80px;
@@ -266,7 +251,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-
 .content-4 .col-md-4 a {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -284,7 +268,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-
 .content-5 .row {
     margin-left: 20px;
     margin-right: 20px;
@@ -297,7 +280,6 @@ Should probably not mess with this... */
 
 
 /* Image Border Modifier */
-
 .content-5 img {
     border: 8px solid white;
 }
@@ -305,10 +287,8 @@ Should probably not mess with this... */
 
 /* Content-6 */
 
-
 /* Image Size and Position Modifier
 Should probably not mess with this... */
-
 .content-6 {
     background-attachment: fixed;
     background-position: center top;
@@ -321,7 +301,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-
 .content-6 .col-md-6 {
     margin-left: 25%;
 }
@@ -329,7 +308,6 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-
 .content-6 h2 {
     padding-bottom: 40px;
 }
@@ -337,10 +315,8 @@ Should probably not mess with this... */
 
 /* Form Modifier */
 
-
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-
 .form-area {
     padding: 50px;
     padding-top: 30px;
@@ -351,7 +327,6 @@ Should probably not mess with this... */
 
 
 /* Message Box Height */
-
 .message-area {
     padding-bottom: 100px;
 }
@@ -378,7 +353,6 @@ Should probably not mess with this... */
 
 
 /* Footer Icon Modifier */
-
 .footer .icon {
     color: white;
     font-size: 24px;
@@ -393,8 +367,6 @@ Should probably not mess with this... */
 
 
 /* RESPONSIVE SCALING */
-
-
 /* DO NOT TAMPER WITH THIS(UNLESS YOU KNOW WHAT YOU ARE DOING)! */
 
 @media (min-width: 1516px) {
