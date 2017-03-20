@@ -62,6 +62,8 @@ The small grey line under content-3... */
 
 
 /* Heading Underline Modifier */
+
+
 /* Underlines on headings, like under the about header, and vip titles. */
 
 hr.secondary-header {
@@ -95,13 +97,16 @@ Icon adjustment for content-2 and content-4 */
     font-color: #333;
 }
 
+
 /* Navbar Modifier */
 
 .navbar {
     background-color: #e3e3e3;
-    padding-top: 4px;
-    padding-bottom: 4px;
     border: none !important;
+}
+
+.navbar-nav {
+    margin: 0px;
 }
 
 .navbar .navbar-brand {
@@ -115,6 +120,12 @@ Icon adjustment for content-2 and content-4 */
 .navbar .nav li a {
     color: #333333;
     font-size: 16px;
+}
+
+/* :Active NAV Link Modifier */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    border-bottom: 2px solid #333333;
+    background-color: #E3E3E3;
 }
 
 .navbar .nav li a:hover {
@@ -382,6 +393,8 @@ Should probably not mess with this... */
 
 
 /* RESPONSIVE SCALING */
+
+
 /* DO NOT TAMPER WITH THIS(UNLESS YOU KNOW WHAT YOU ARE DOING)! */
 
 @media (min-width: 1516px) {
