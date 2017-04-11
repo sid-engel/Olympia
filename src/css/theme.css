@@ -11,18 +11,21 @@ Best of luck, young padawan. - Sid Engel
 
 
 /* Heading Size Modifier */
+
 h2, .large-text {
     font-size: 30px;
 }
 
 
 /* Paragraph Size Modifier */
+
 p, .small-text {
     font-size: 14px;
 }
 
 
 /* Button Modifier */
+
 .btn-primary {
     background-color: transparent;
     color: #0b193d;
@@ -51,7 +54,7 @@ p, .small-text {
 
 
 /* Border Modifier
-The small grey line under content-3... */
+The small grey line under about... */
 
 .border-top {
     border-top: solid 8px lightgrey;
@@ -59,7 +62,10 @@ The small grey line under content-3... */
 
 
 /* Heading Underline Modifier */
+
+
 /* Underlines on headings, like under the about header, and vip titles. */
+
 hr.secondary-header {
     border: 0;
     height: 2px;
@@ -78,7 +84,8 @@ hr.primary-header {
 
 
 /* Glyph Size Modifier
-Icon adjustment for content-2 and content-4 */
+Icon adjustment for content-2 and vip */
+
 .glyph-profile {
     text-align: center;
     font-size: 100px;
@@ -92,6 +99,7 @@ Icon adjustment for content-2 and content-4 */
 
 
 /* Navbar Modifier */
+
 .navbar {
     background-color: #e3e3e3;
     border: none !important;
@@ -114,7 +122,9 @@ Icon adjustment for content-2 and content-4 */
     font-size: 16px;
 }
 
+
 /* :Active NAV Link Modifier */
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     border-bottom: 2px solid #333333;
     background-color: #E3E3E3;
@@ -125,9 +135,9 @@ Icon adjustment for content-2 and content-4 */
 }
 
 
-/* Content 1 */
+/* HEADER */
 
-.content-1 {
+.header {
     text-align: center;
     color: white;
 }
@@ -135,7 +145,8 @@ Icon adjustment for content-2 and content-4 */
 
 /* Paralax Effect
 Should probably not mess with this... */
-.content-1 .jumbotron {
+
+.header .jumbotron {
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
@@ -146,9 +157,9 @@ Should probably not mess with this... */
 }
 
 
-/* Content 2 */
+/* INFO */
 
-.content-2 {
+.info {
     background-color: #f7f7f7;
     margin-top: -30px;
     padding-bottom: 40px;
@@ -157,47 +168,51 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-.content-2 .col-md-4 {
+
+.info .col-md-4 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 40px;
 }
 
-.content-2 img {
+.info img {
     max-width: 100px;
 }
 
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-.content-2 .col-md-4 p {
+
+.info .col-md-4 p {
     margin-left: 80px;
     margin-right: 80px;
 }
 
 
 /* Content 3 */
-.content-3 {
+
+.about {
     background-color: #0b193d;
     margin-top: -30px;
     padding-bottom: 30px;
 }
 
-.content-3 .col-md-8, .content-3 .col-md-4 {
+.about .col-md-8, .about .col-md-4 {
     text-align: center;
     color: white;
     padding-top: 30px;
     padding-bottom: 10px;
 }
 
-.content-3 .col-md-8 {
+.about .col-md-8 {
     padding-bottom: 50px !important;
 }
 
 
 /* Image Size and Position Modifier
 Should probably not mess with this... */
-.content-3 .col-md-4 img {
+
+.about .col-md-4 img {
     max-width: none !important;
     position: fixed;
     top: 20px;
@@ -207,32 +222,54 @@ Should probably not mess with this... */
     padding-right: 20px;
 }
 
-.content-3 .col-md-8 a {
+.about .col-md-8 a {
     float: center;
 }
 
-.content-3 .col-md-8 h2 {
+.about .col-md-8 h2 {
     margin-bottom: 20px;
 }
 
-.content-3 .col-md-8 p {
+.about .col-md-8 p {
     font-size: 1.125em;
     text-align: center;
 }
 
 
-/* Content 4 */
+/* STAFF */
 
-.content-4 {
+.staff {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1.5%;
+    padding-bottom: 2.5%;
+    text-align: center;
+    background-color: #ededed;
+}
+
+.staff h1, .staff h2, .staff h3, .staff h4, .staff p {
+    padding-bottom: 1%;
+    color: black;
+}
+
+.staff img {
+    max-width: 300px;
+    padding-top: 2.5%;
+}
+
+
+/* VIP */
+
+.vip {
     background-color: #f7f7f7;
-    margin-top: -30px;
     padding-bottom: 20px;
 }
 
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-.content-4 .col-md-4 {
+
+.vip .col-md-4 {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -243,7 +280,8 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-.content-4 .col-md-4 p {
+
+.vip .col-md-4 p {
     margin-left: 80px;
     margin-right: 80px;
 }
@@ -251,15 +289,16 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-.content-4 .col-md-4 a {
+
+.vip .col-md-4 a {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 
-/* Content-5 */
+/* SCREENSHOTS */
 
-.content-5 {
+.screenshots {
     padding-top: 30px;
     padding-bottom: 60px;
     background-color: #ececec;
@@ -268,28 +307,32 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-.content-5 .row {
+
+.screenshots .row {
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 30px;
 }
 
-.content-5 h2 {
+.screenshots h2 {
     text-align: center;
 }
 
 
 /* Image Border Modifier */
-.content-5 img {
+
+.screenshots img {
     border: 8px solid white;
 }
 
 
-/* Content-6 */
+/* REPORT */
+
 
 /* Image Size and Position Modifier
 Should probably not mess with this... */
-.content-6 {
+
+.report {
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
@@ -301,15 +344,18 @@ Should probably not mess with this... */
 
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
-.content-6 h2 {
+
+.report h2 {
     padding-bottom: 40px;
 }
 
 
 /* Form Modifier */
 
+
 /* Column Margin/Spacing Adjustment
 Should probably not mess with this... */
+
 .form-area {
     padding: 50px;
     padding-top: 30px;
@@ -320,6 +366,7 @@ Should probably not mess with this... */
 
 
 /* Message Box Height */
+
 .message-area {
     padding-bottom: 100px;
 }
@@ -346,6 +393,7 @@ Should probably not mess with this... */
 
 
 /* Footer Icon Modifier */
+
 .footer .icon {
     color: white;
     font-size: 24px;
@@ -360,16 +408,18 @@ Should probably not mess with this... */
 
 
 /* RESPONSIVE SCALING */
+
+
 /* DO NOT TAMPER WITH THIS(UNLESS YOU KNOW WHAT YOU ARE DOING)! */
 
 @media (min-width: 1516px) {
-    .content-3 .col-md-8, .content-3 .col-md-4 {
+    .about .col-md-8, .about .col-md-4 {
         padding-left: 250px;
         padding-right: 250px;
         padding-top: 50px;
         padding-bottom: 10px;
     }
-    .content-4 .list-group-item {
+    .vip .list-group-item {
         width: 400px;
         margin-left: auto;
         margin-right: auto;
@@ -380,9 +430,13 @@ Should probably not mess with this... */
 }
 
 @media(min-width: 992px) {
-  /* Column Margin/Spacing Adjustment
+    /* Column Margin/Spacing Adjustment
   Should probably not mess with this... */
-  .content-6 .col-md-6 {
-      margin-left: 25%;
-  }
+    .report .col-md-6 {
+        margin-left: 25%;
+    }
+}
+
+.circular {
+    border-radius: 50%;
 }
