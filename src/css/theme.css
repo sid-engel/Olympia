@@ -1,442 +1,94 @@
-/*
------  Olympia CSS Modifications   -----
-Welcome to the CSS modification file for the theme. This is where you will customize the theme to your liking.
-The data in which each Content-x holds is pretty self explainatory, hopefully the CSS item names are too.
-Best of luck, young padawan. - Sid Engel
--------------------------------------------------
-*/
-
-
-/* -----  Olympia GLOBAL CSS Modifications   ----- */
-
-
-/* Heading Size Modifier */
-
-h2, .large-text {
-    font-size: 30px;
+p {
+  font-size: 16px;
 }
 
-
-/* Paragraph Size Modifier */
-
-p, .small-text {
-    font-size: 14px;
+h4 {
+  padding-bottom: 2%;
 }
 
-
-/* Button Modifier */
-
-.btn-primary {
-    background-color: transparent;
-    color: #0b193d;
-    border: 2px solid #0b193d;
+.row {
+  margin: 0;
 }
 
-.btn-primary:hover {
-    background-color: #0b193d;
-    border: 2px solid #0b193d;
-    color: white;
-    transition: all 0.5s ease 0s;
+.nav-wrapper ul, .brand-logo  {
+  margin: 0px 2% 0px 2%;
 }
-
-.btn-success {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    transition: all 0.5s ease 0s;
-}
-
-.btn-success:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid white;
-}
-
-
-/* Border Modifier
-The small grey line under about... */
-
-.border-top {
-    border-top: solid 8px lightgrey;
-}
-
-
-/* Heading Underline Modifier */
-
-
-/* Underlines on headings, like under the about header, and vip titles. */
-
-hr.secondary-header {
-    border: 0;
-    height: 2px;
-    background-color: #333;
-    width: 100px;
-    margin-top: 10px;
-}
-
-hr.primary-header {
-    border: 0;
-    height: 2px;
-    background-color: white;
-    width: 185px;
-    margin-top: -10px;
-}
-
-
-/* Glyph Size Modifier
-Icon adjustment for content-2 and vip */
-
-.glyph-profile {
-    text-align: center;
-    font-size: 100px;
-}
-
-.glyph-price {
-    text-align: center;
-    font-size: 75px;
-    font-color: #333;
-}
-
-
-/* Navbar Modifier */
-
-.navbar {
-    background-color: #e3e3e3;
-    border: none !important;
-}
-
-.navbar-nav {
-    margin: 0px;
-}
-
-.navbar .navbar-brand {
-    color: #333333;
-}
-
-.navbar .navbar-brand:hover {
-    color: #878787;
-}
-
-.navbar .nav li a {
-    color: #333333;
-    font-size: 16px;
-}
-
-
-/* :Active NAV Link Modifier */
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    border-bottom: 2px solid #333333;
-    background-color: #E3E3E3;
-}
-
-.navbar .nav li a:hover {
-    color: #878787;
-}
-
-
-/* HEADER */
 
 .header {
-    text-align: center;
-    color: white;
+  color: white;
 }
 
-
-/* Paralax Effect
-Should probably not mess with this... */
-
-.header .jumbotron {
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Background-Image Padding */
-    padding-top: 250px;
-    padding-bottom: 250px
+.main {
+  padding: 3% 0px 3% 0px;
+  margin:  0px 8% 0px 8%;
 }
 
-
-/* INFO */
-
+/* Info */
 .info {
-    background-color: #f7f7f7;
-    margin-top: -30px;
-    padding-bottom: 40px;
-}
-
-
-/* Column Margin/Spacing Adjustment
-Should probably not mess with this... */
-
-.info .col-md-4 {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 40px;
+  background-color: rgb(250, 250, 250);
 }
 
 .info img {
-    max-width: 100px;
+  max-width: 25%;
 }
-
-
-/* Column Margin/Spacing Adjustment
-Should probably not mess with this... */
-
-.info .col-md-4 p {
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-
-/* Content 3 */
 
 .about {
-    background-color: #0b193d;
-    margin-top: -30px;
-    padding-bottom: 30px;
+  background-color: rgb(244, 244, 244);
 }
 
-.about .col-md-8, .about .col-md-4 {
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 10px;
+.about img {
+  max-width: 70%;
+  margin-bottom: -10%;
 }
 
-.about .col-md-8 {
-    padding-bottom: 50px !important;
-}
-
-
-/* Image Size and Position Modifier
-Should probably not mess with this... */
-
-.about .col-md-4 img {
-    max-width: none !important;
-    position: fixed;
-    top: 20px;
-    width: 700px;
-    margin-left: -300px;
-    margin-bottom: -10px;
-    padding-right: 20px;
-}
-
-.about .col-md-8 a {
-    float: center;
-}
-
-.about .col-md-8 h2 {
-    margin-bottom: 20px;
-}
-
-.about .col-md-8 p {
-    font-size: 1.125em;
-    text-align: center;
-}
-
-
-/* STAFF */
-
+/* Staff */
 .staff {
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 1.5%;
-    padding-bottom: 2.5%;
-    text-align: center;
-    background-color: #ededed;
+  background-color: rgb(250, 250, 250);
 }
 
-.staff h1, .staff h2, .staff h3, .staff h4, .staff p {
-    padding-bottom: 1%;
-    color: black;
-}
-
-.staff img {
-    max-width: 300px;
-    padding-top: 2.5%;
+.no-padding {
+  padding: 0;
 }
 
 
-/* VIP */
+.staff i {
+  font-size: 25px;
+  margin: 0px .5% 0px .5%;
+  color: #212121;
+}
+
+.staff i:hover {
+  color: rgb(70, 70, 70);
+}
 
 .vip {
-    background-color: #f7f7f7;
-    padding-bottom: 20px;
+  background-color: rgb(244, 244, 244)
 }
-
-
-/* Column Margin/Spacing Adjustment
-Should probably not mess with this... */
-
-.vip .col-md-4 {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-
-/* Column Margin/Spacing Adjustment
-Should probably not mess with this... */
-
-.vip .col-md-4 p {
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-
-/* Column Margin/Spacing Adjustment
-Should probably not mess with this... */
-
-.vip .col-md-4 a {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-
-/* SCREENSHOTS */
 
 .screenshots {
-    padding-top: 30px;
-    padding-bottom: 60px;
-    background-color: #ececec;
+  background-color: rgb(250, 250, 250);
 }
 
-
-/* Column Margin/Spacing Adjustment
-Should probably not mess with this... */
-
-.screenshots .row {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 30px;
+.contact .card-panel {
+  margin: 3% 25% 3% 25%;
 }
 
-.screenshots h2 {
+/* Responsiveness */
+@media screen and (max-width: 992px) {
+  .about {
     text-align: center;
+  }
+  .about img {
+    padding-bottom: 8%;
+  }
 }
 
-
-/* Image Border Modifier */
-
-.screenshots img {
-    border: 8px solid white;
-}
-
-
-/* REPORT */
-
-
-/* Image Size and Position Modifier
-Should probably not mess with this... */
-
-.report {
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-
-/* Column Margin/Spacing Adjustment
-Should probably not mess with this... */
-
-.report h2 {
-    padding-bottom: 40px;
-}
-
-
-/* Form Modifier */
-
-
-/* Column Margin/Spacing Adjustment
-Should probably not mess with this... */
-
-.form-area {
-    padding: 50px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    background-color: white;
-    text-align: center;
-}
-
-
-/* Message Box Height */
-
-.message-area {
-    padding-bottom: 100px;
-}
-
-
-/* Footer */
-
-.footer {
-    background-color: #0b193d;
-    padding-bottom: 10px;
-    margin-top: -1px;
-    padding-top: 22px;
-}
-
-.footer .col-md-6 {
-    text-align: center;
-}
-
-.footer p, .footer a {
-    color: white;
-    text-align: center;
-    font-size: 14px;
-}
-
-
-/* Footer Icon Modifier */
-
-.footer .icon {
-    color: white;
-    font-size: 24px;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-.footer .icon:hover {
-    transform: rotate(9deg);
-    transition: 400ms ease all;
-}
-
-
-/* RESPONSIVE SCALING */
-
-
-/* DO NOT TAMPER WITH THIS(UNLESS YOU KNOW WHAT YOU ARE DOING)! */
-
-@media (min-width: 1516px) {
-    .about .col-md-8, .about .col-md-4 {
-        padding-left: 250px;
-        padding-right: 250px;
-        padding-top: 50px;
-        padding-bottom: 10px;
-    }
-    .vip .list-group-item {
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .sub-footer .row {
-        margin-left: 25%;
-    }
-}
-
-@media(min-width: 992px) {
-    /* Column Margin/Spacing Adjustment
-  Should probably not mess with this... */
-    .report .col-md-6 {
-        margin-left: 25%;
-    }
-}
-
-.circular {
-    border-radius: 50%;
+/* Transparent Nav Stuff */
+nav {
+    background-color: transparent;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }

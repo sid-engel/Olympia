@@ -1,361 +1,499 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Site Description -->
-<meta name="description" content="An epic one-page Bootstrap theme.">
+<head>
 
-<!-- Site Author. Feel free to change this -->
-<meta name="author" content="Sid Engel">
+  <!-- Olympia 2.0, created with love by Sid Engel. -->
 
-<!-- Site Title. What's displayed on the tab -->
-<title>Olympia - Bootstrap Template</title>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-<!-- AOS -->
-<link href="./src/css/aos.css" rel="stylesheet">
-<script src="./src/js/aos.js"></script>
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 
-<!-- Font Awesome Icons -->
-<script src="https://use.fontawesome.com/509644e2f4.js"></script>
+  <!-- Roboto Font + Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
-<!-- jQuery -->
-<script type="text/javascript" src="./src/js/jquery.min.js"></script>
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-<!-- AJAX -->
-<script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-<!-- Bootstrap Core CSS -->
-<link href="./src/css/bootstrap.min.css" rel="stylesheet">
+  <!-- MC Player Counter -->
+  <script src="https://cdn.rawgit.com/leonardosnt/mc-player-counter/1.1.0/dist/mc-player-counter.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="./src/js/bootstrap.min.js"></script>
+  <!-- Theme's Stylesheet -->
+  <link rel="stylesheet" href="./src/css/theme.css" />
 
-<!-- Theme CSS -->
-<link href="./src/css/theme.css" rel="stylesheet">
+  <!-- Theme JS -->
+  <script src="./src/js/smoothscroll.js"></script>
+  <script src="./src/js/nav.js"></script>
 
-<!-- Nav stuff -->
-<script src="./src/js/jquery.easing.min.js"></script>
-<script src="./src/js/navbar-scrolling.js"></script>
+  <!-- Site Title -->
+  <title>Olympia 2.0 - Your Server</title>
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <!-- Meta Info -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Sid Engel">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
 
-    <!-- AOS INIT. Don't mess with this... -->
-    <script>
-        AOS.init();
-    </script>
+  <!-- AOS INIT -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-sine',
+    });
+  </script>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-nav" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Olympia</a>
+  <!-- Nav -->
+  <div class="header" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
+    <div class="navbar-fixed">
+      <nav class="z-depth-0">
+        <div class="nav-wrapper" data-aos="fade">
+          <a href="#" class="brand-logo">Olympia</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#vip">Vip</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="header-content center-align" data-aos="fade">
+      <h1 style="padding-top: 6%;">Welcome To Olympia</h1>
+      <h5 style="">An easy to modify one page template, for server owners.</h5>
+      <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="#">GitHub</a>
+    </div>
+  </div>
+  <!-- / Nav -->
+
+  <!-- Info -->
+  <div class="info center-align" data-aos="fade">
+    <div class="main">
+      <div class="row">
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/dirt-icon.png">
+          <h4>Survival</h4>
+          <i class="chip">
+          <span data-playercounter-ip="mc-central.net"></span> Players Online
+        </i>
+          <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
+            Suspendisse finibus non sem vitae viverra.</p>
+          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect</a>
+        </div>
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/stone-icon.png">
+          <h4>Creative</h4>
+          <i class="chip">
+          <span data-playercounter-ip="play.guildcraft.org"></span> Players Online
+        </i>
+          <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
+            Suspendisse finibus non sem vitae viverra.</p>
+          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect</a>
+        </div>
+        <div class="col l4 s12">
+          <img class="responsive-img" src="./src/img/ender-icon.png">
+          <h4>SkyBlock</h4>
+          <i class="chip">
+          <span data-playercounter-ip="play.hypixel.net"></span> Players Online
+        </i>
+          <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare.
+            Suspendisse finibus non sem vitae viverra.</p>
+          <a class="btn-large waves-effect waves-light grey darken-4" style="margin-bottom: 9%; margin-top: 2%;">Connect</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Info -->
+
+  <!-- About -->
+  <div class="about" id="about">
+    <div class="main">
+      <div class="row">
+        <div class="col s12 l5 align-center">
+          <img class="responsive-img" src="./src/img/loop.gif" data-aos="fade-right">
+        </div>
+        <div class="col s12 l7" data-aos="fade-left">
+          <h4>What is Olympia?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed
+            ornare ornare. Suspendisse finibus non sem vitae viverra.Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien
+            sed ornare ornare. Suspendisse finibus non sem vitae viverra. Morbi molestie mollis molestie.</p>
+          <p>Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit.</p>
+          <a class="waves-effect waves-light btn-large grey darken-4" style="margin-top: 2%;" href="#">Discord</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / About -->
+
+  <!-- Staff -->
+  <div class="staff" id="staff">
+    <div class="main">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="center-align" style="padding-bottom: 1
+        %;">Our Staff Team</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6 l3" data-aos="zoom-in-up" data-aos-duration="400">
+        <div class="card-panel no-padding">
+          <div class="row">
+            <div class="col s12 no-padding">
+              <img class="responsive-img materialboxed" src="./src/img/profile3.png">
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#staff">Staff</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#vip">Vip</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#screenshots">Screenshots</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#report">Report</a>
-                    </li>
-                </ul>
-                <!-- /.navbar-collapse -->
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <h5>Sid Engel</h5>
             </div>
-            <!-- /.container -->
-    </nav>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <blockquote style="margin: 0% 8% 0% 8%;">
+                I'm Sid. A Web Developer with intentions of growing my skill, and providing stunning content to the MineCraft community.
+              </blockquote>
+            </div>
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="150">
+        <div class="card-panel no-padding">
+          <div class="row">
+            <div class="col s12 no-padding">
+              <img class="responsive-img materialboxed" src="./src/img/profile3.png">
+            </div>
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <h5>Sid Engel</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <blockquote style="margin: 0% 8% 0% 8%;">
+                I'm Sid. A Web Developer with intentions of growing my skill, and providing stunning content to the MineCraft community.
+              </blockquote>
+            </div>
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="300">
+        <div class="card-panel no-padding">
+          <div class="row">
+            <div class="col s12 no-padding">
+              <img class="responsive-img materialboxed" src="./src/img/profile3.png">
+            </div>
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <h5>Sid Engel</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <blockquote style="margin: 0% 8% 0% 8%;">
+                I'm Sid. A Web Developer with intentions of growing my skill, and providing stunning content to the MineCraft community.
+              </blockquote>
+            </div>
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="450">
+        <div class="card-panel no-padding">
+          <div class="row">
+            <div class="col s12 no-padding">
+              <img class="responsive-img materialboxed" src="./src/img/profile3.png">
+            </div>
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <h5>Sid Engel</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <blockquote style="margin: 0% 8% 0% 8%;">
+                I'm Sid. A Web Developer with intentions of growing my skill, and providing stunning content to the MineCraft community.
+              </blockquote>
+            </div>
+          </div>
+          <div class="row main">
+            <div class="col s12 center-align">
+              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- / Staff -->
 
-    <!-- START OF CONTENT -->
-
-    <!-- HEADER -->
-    <div class="header">
-        <div class="jumbotron container-fluid" style="background-image: url(src/img/cityscape.jpg);">
-            <div data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
-                <h1>Welcome To OlympiaMC.</h1>
-                <p style="padding-bottom: 10px;">An easy to modify bootstrap template, for minecraft servers.</p>
+  <!-- Vip -->
+  <div class="vip center-align" id="vip">
+    <div class="main">
+      <div class="row" data-aos="fade">
+        <div class="col s12">
+          <h4>Donator Information</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4" data-aos="fade-right">
+          <div class="card-panel">
+            <div class="row">
+              <div class="col s12">
+                <h5>Vip</h5>
+                <span>$5.00 USD</span>
+                <br><br>
+                <table class="centered responsive-table striped">
+                  <tbody>
+                    <tr>
+                      <td>Perk 1</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 2</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 3</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 4</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 5</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <br>
-                <a class="btn btn-success btn-lg" href="http://www.github.com/sid-engel"><span class="glyphicon glyphicon-file"></span> Github</a>
+                <a class="waves-effect waves-light btn-large grey darken-4" href="#">Purchase</a>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="col s12 l4" data-aos="fade">
+          <div class="card-panel">
+            <div class="row">
+              <div class="col s12">
+                <h5>Vip</h5>
+                <span>$10.00 USD</span>
+                <br><br>
+                <table class="centered responsive-table striped">
+                  <tbody>
+                    <tr>
+                      <td>Perk 1</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 2</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 3</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 4</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 5</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <a class="waves-effect waves-light btn-large grey darken-4" href="#">Purchase</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l4" data-aos="fade-left">
+          <div class="card-panel">
+            <div class="row">
+              <div class="col s12">
+                <h5>Vip++</h5>
+                <span>$15.00 USD</span>
+                <br><br>
+                <table class="centered responsive-table striped">
+                  <tbody>
+                    <tr>
+                      <td>Perk 1</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 2</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 3</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 4</td>
+                    </tr>
+                    <tr>
+                      <td>Perk 5</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <a class="waves-effect waves-light btn-large grey darken-4" href="#">Purchase</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <!-- /Vip -->
 
-    <!-- INFO -->
+  <!-- Screenshots -->
+  <div class="screenshots center-align" id="screenshots">
+    <div class="main" data-aos="fade">
+      <div class="row">
+        <div class="col s12">
+          <h4>Server Screenshots</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 1.33%;">
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+        <div class="col l3 s6">
+          <div class="card-panel" style="margin: 0; padding: 0;">
+            <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Screenshots -->
 
-    <div class="info container-fluid">
+  <!-- Contact -->
+  <div class="contact" id="contact" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
+    <div class="main">
+      <div class="card-panel" data-aos="fade-up">
+      <h4 class="center-align">Contact Us</h4>
+      <form class="col s12">
         <div class="row">
-            <div data-aos="fade" data-aos-duration="1200" data-aos-once="true">
-                <div class="col-md-4">
-                    <img src="./src/img/Iron-Sword-icon.png">
-                    <h2 class="large-text">Survival</h2>
-                    <hr class="secondary-header">
-                    <p>This is placeholder text. You should replace this with your own content. <b>Morbi molestie mollis molestie.</b> Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed
-                        ornare ornare. Suspendisse finibus non sem vitae viverra.
-                    </p>
-                    <a class="btn btn-primary btn-lg" href="#">Connect</a>
-                </div>
-                <div class="col-md-4">
-                    <img src="./src/img/Minecraft-grass-icon.png">
-                    <h2>Creative</h2>
-                    <hr class="secondary-header">
-                    <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. <b>Aenean viverra risus sed ullamcorper blandit.</b> Integer ultricies sapien sed
-                        ornare ornare. Suspendisse finibus non sem vitae viverra.
-                    </p>
-                    <a class="btn btn-primary btn-lg" href="#">Connect</a>
-                </div>
-                <div class="col-md-4">
-                    <img src="./src/img/endericon.png">
-                    <h2>Skyblock</h2>
-                    <hr class="secondary-header">
-                    <p>This is placeholder text. You should replace this with your own content. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. <b>Integer ultricies sapien sed ornare ornare.</b>                        Suspendisse finibus non sem vitae viverra.
-                    </p>
-                    <section id="about">
-                        <a class="btn btn-primary btn-lg" href="#">Connect</a>
-                </div>
-            </div>
-        </div>
-        </section>
-    </div>
-
-    <!-- ABOUT -->
-    <div class="about container-fluid">
-        <div class="row">
-            <div class="col-md-4 hidden-sm-down" data-aos="fade-right" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-once="true">
-                <img src="./src\img\profile.png" alt="Image failed to load...">
-            </div>
-            <div class="col-md-8 hidden-sm-down" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-once="true">
-                <h2>What is OlympiaMc?</h2>
-                <hr class="primary-header">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien
-                    sed ornare ornare. Suspendisse finibus non sem vitae viverra.</p>
-                <p>Morbi molestie mollis molestie. Morbi molestie mollis molestie. Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit. Integer ultricies sapien sed ornare ornare. Suspendisse finibus non sem vitae
-                    viverra.
-                </p>
-                <p>Morbi molestie mollis molestie.</p>
-                <section id="staff">
-                    <br>
-            </div>
-        </div>
-    </div>
-
-    <!-- STAFF -->
-
-    <div class="staff container-fluid">
-        <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-once="true">Our Staff</h1>
-        <!-- START OF STAFF LIST -->
-        <div class="row" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-once="true">
-            <div class="col-md-3">
-                <img class="circular" src="https://placeholdit.imgix.net/~text?txtsize=47&txt=500%C3%97500&w=500&h=500">
-                <h3>Sid_Engel</h3>
-                <h4>Admin</h4>
-                <p>Some extra information...</p>
-            </div>
-            <div class="col-md-3">
-                <img class="circular" src="https://placeholdit.imgix.net/~text?txtsize=47&txt=500%C3%97500&w=500&h=500">
-                <h3>John126</h3>
-                <h4>Moderator</h4>
-                <p>Some extra information...</p>
-            </div>
-            <div class="col-md-3">
-                <img class="circular" src="https://placeholdit.imgix.net/~text?txtsize=47&txt=500%C3%97500&w=500&h=500">
-                <h3>Notch</h3>
-                <h4>Helper</h4>
-                <p>Some extra information...</p>
-            </div>
-            <div class="col-md-3">
-                <img class="circular" src="https://placeholdit.imgix.net/~text?txtsize=47&txt=500%C3%97500&w=500&h=500">
-                <h3>PaulSoaresJr</h3>
-                <section id="vip">
-                    <h4>Helper</h4>
-                    <p>Some extra information...</p>
-            </div>
-        </div>
-        <!-- END OF STAFF LIST -->
-        <!-- FEEL FREE TO COPY THIS SECTION, IF YOU HAVE MORE STAFF -->
-        </section>
-    </div>
-
-    <!-- VIP -->
-
-    <div class="vip container-fluid">
-        <div class="row">
-            <div class="col-md-4" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="100" data-aos-once="true">
-                <span class="glyphicon glyphicon-picture glyph-price"></span>
-                <h2>Vip</h2>
-                <hr class="secondary-header">
-                <p class="large-text" style="color: green;">2$<span class="small-text">/MONTH</span></p>
-                <ul class="list-group">
-                    <li class="list-group-item">60 Users</li>
-                    <li class="list-group-item">Unlimited Forums</li>
-                    <li class="list-group-item">Unlimited Reports</li>
-                    <li class="list-group-item">3,000 Entries per Month</li>
-                    <li class="list-group-item">200mb Storage</li>
-                    <li class="list-group-item">Unlimited Support</li>
-                </ul>
-                <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
-            </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="250" data-aos-once="true">
-                <span class="glyphicon glyphicon-tags glyph-price"></span>
-                <h2>Vip+</h2>
-                <hr class="secondary-header">
-                <p class="large-text" style="color: green;">5$<span class="small-text">/MONTH</span></p>
-                <ul class="list-group">
-                    <li class="list-group-item"><b>60</b> Users</li>
-                    <li class="list-group-item">Unlimited Forums</li>
-                    <li class="list-group-item">Unlimited Reports</li>
-                    <li class="list-group-item"><b>3,000</b> Entries per Month</li>
-                    <li class="list-group-item"><b>200mb</b> Storage</li>
-                    <li class="list-group-item">Unlimited Support</li>
-                </ul>
-                <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel">Purchase</a>
-            </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="center-bottom" data-aos-delay="350" data-aos-once="true">
-                <span class="glyphicon glyphicon-book glyph-price"></span>
-                <h2>Vip++</h2>
-                <hr class="secondary-header">
-                <p class="large-text" style="color: green;">10$<span class="small-text">/MONTH</span></p>
-                <ul class="list-group">
-                    <li class="list-group-item">60 Users</li>
-                    <li class="list-group-item">Unlimited Forums</li>
-                    <li class="list-group-item">Unlimited Reports</li>
-                    <li class="list-group-item">3,000 Entries per Month</li>
-                    <li class="list-group-item">200mb Storage</li>
-                    <li class="list-group-item">Unlimited Support</li>
-                </ul>
-                <a class="btn btn-primary btn-lg" href="http://www.github.com/sid-engel " id="content-5">Purchase</a>
-                <section id="screenshots">
-            </div>
-        </div>
-    </div>
-    </section>
-
-    <!-- SERVER SCREENSHOTS -->
-
-    <div class="screenshots container-fluid">
-        <h2>Server Screenshots</h2>
-        <hr class="secondary-header" style="margin-bottom: 40px;">
-        <div class="row">
-            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100" data-aos-once="true">
-                <a href="#">
-                    <img src="http://placehold.it/1280x720" class="img-responsive" alt="Image failed to load...">
-                </a>
-            </div>
-            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true">
-                <a href="#">
-                    <img src="http://placehold.it/1280x720" class="img-responsive" alt="Image failed to load...">
-                </a>
-            </div>
-            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300" data-aos-once="true">
-                <a href="#">
-                    <img src="http://placehold.it/1280x720" class="img-responsive" alt="Image failed to load...">
-                </a>
-            </div>
-            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
-                <a href="#">
-                    <img src="http://placehold.it/1280x720" class="img-responsive" alt="Image failed to load...">
-                </a>
-            </div>
+          <div class="input-field col s6">
+            <input type="text" class="form-control" id="name" name="name" placeholder="*Name" required />
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input type="text" class="form-control" id="email" name="email" placeholder="*Email" required />
+            <label for="email">Email</label>
+          </div>
         </div>
         <div class="row">
-            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="500" data-aos-once="true">
-                <a href="#">
-                    <img src="http://placehold.it/1280x720" class="img-responsive" alt="Image failed to load...">
-                </a>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="texarea" class="materialize-textarea"></textarea>
+                <label for="textarea">Your Message</label>
+              </div>
             </div>
-            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="600" data-aos-once="true">
-                <a href="#">
-                    <img src="http://placehold.it/1280x720" class="img-responsive" alt="Image failed to load...">
-                </a>
+            <div>
+              <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect grey darken-4'>Submit</button>
             </div>
-            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="700" data-aos-once="true">
-                <a href="#">
-                    <img src="http://placehold.it/1280x720" class="img-responsive" alt="Image failed to load...">
-                </a>
-            </div>
-            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="800" data-aos-once="true">
-                <a href="#">
-                    <img src="http://placehold.it/1280x720" class="img-responsive" alt="Image failed to load...">
-                </a>
-            </div>
+          </form>
         </div>
+
+      </form>
     </div>
-    </section>
+  </div>
+  </div>
+  <!-- /Contact -->
 
-    <!-- REPORT -->
-    <section id="report">
-        <div class="report container-fluid"  style="background-image: url(src/img/cave.jpg);">
-            <div class="col-md-6" id="report">
-                <div class="form-area" data-aos="fade-up" data-aos-duration="1200">
-                    <h2>Report</h2>
-                    <form role="form" action="send_form_email.php" method="get" name="reportForm" type="text">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="*Name" required />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="email" name="email" placeholder="*Email" required />
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control message-area" type="textarea" id="message" placeholder="*Message" name="message" required></textarea>
-                            <!-- Character Limit of 140 -->
-                            <!-- <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140"= rows="7"></textarea> -->
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="cords" name="cords" placeholder="Coordinates, if possible..." />
-                        </div>
-                        <input class="btn btn-primary btn-lg" href="send_form_email.php" type="submit" value="Submit" name="submit"></a>
-                    </form>
-                </div>
-            </div>
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-4 z-depth-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">Sed tincidunt diam eu ante pharetra dignissim. Aenean viverra risus sed ullamcorper blandit.</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-
-    <div class="footer container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <p>Created with <i class="fa fa-heart icon" aria-hidden="true" style="color: red; font-size: 18px; "></i> by <a href="http://www.sidengel.com">Sid Engel</a>.</p>
-            </div>
-            <div class="col-md-6">
-                <a href="https://twitter.com/sid_engel"><i class="fa fa-twitter icon" aria-hidden="true"></i></a>
-                <a href="mailto:info@sidengel.com?Subject=OlympiaMc%20Demo%Page"><i class="fa fa-envelope-o icon" aria-hidden="true"></i></a>
-                <a href="https://www.github.com/sid-engel"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AR2SJJ6MPXM3E"><i class="fa fa-paypal icon" aria-hidden="true"></i></a>
-
-            </div>
-
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Social Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Official Twitter Feed</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">FaceBook Group</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+          </ul>
         </div>
+      </div>
     </div>
+    <div class="footer-copyright grey darken-4 z-depth-4">
+      <div class="container">
+        <!-- Please give credit, where credit is due. Leave this here... -->
+        Created with care, by Sid Engel.
+        <a class="grey-text text-lighten-4 right" href="#!">©ServerName 2017</a>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
 </body>
 
-</php>
+</html>
