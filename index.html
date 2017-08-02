@@ -39,20 +39,12 @@
   <!-- Meta Info -->
   <meta charset="UTF-8">
   <meta name="author" content="Sid Engel">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="A friendly Minecraft server, with a relaxed vibe.">
+  <meta name="keywords" content="Minecraft, Server, Your ServerName, Multiplayer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-
-  <!-- AOS INIT -->
-  <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-sine',
-    });
-  </script>
 
   <!-- Nav -->
   <div class="header" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
@@ -147,7 +139,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col s6 l3" data-aos="zoom-in-up" data-aos-duration="400">
+      <div class="col m6 s12 l3" data-aos="zoom-in-up" data-aos-duration="400">
         <div class="card-panel no-padding">
           <div class="row">
             <div class="col s12 no-padding">
@@ -175,7 +167,7 @@
           </div>
         </div>
       </div>
-      <div class="col s6 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="150">
+      <div class="col m6 s12 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="150">
         <div class="card-panel no-padding">
           <div class="row">
             <div class="col s12 no-padding">
@@ -203,7 +195,7 @@
           </div>
         </div>
       </div>
-      <div class="col s6 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="300">
+      <div class="col m6 s12 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="300">
         <div class="card-panel no-padding">
           <div class="row">
             <div class="col s12 no-padding">
@@ -231,7 +223,7 @@
           </div>
         </div>
       </div>
-      <div class="col s6 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="450">
+      <div class="col m6 s12 l3" data-aos="zoom-in-up" data-aos-duration="400" data-aos-delay="450">
         <div class="card-panel no-padding">
           <div class="row">
             <div class="col s12 no-padding">
@@ -404,7 +396,7 @@
           </div>
         </div>
       </div>
-      <div class="row" style="padding-top: 1.33%;">
+      <div class="row">
         <div class="col l3 s6">
           <div class="card-panel" style="margin: 0; padding: 0;">
             <img class="responsive-img materialboxed" src="./src/img/cityscape.jpg">
@@ -438,11 +430,11 @@
       <form class="col s12">
         <div class="row">
           <div class="input-field col s6">
-            <input type="text" class="form-control" id="name" name="name" placeholder="*Name" required />
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
             <label for="name">Name</label>
           </div>
           <div class="input-field col s6">
-            <input type="text" class="form-control" id="email" name="email" placeholder="*Email" required />
+            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required />
             <label for="email">Email</label>
           </div>
         </div>
@@ -450,8 +442,8 @@
           <form class="col s12">
             <div class="row">
               <div class="input-field col s12">
-                <textarea id="texarea" class="materialize-textarea"></textarea>
-                <label for="textarea">Your Message</label>
+                <textarea id="message" class="materialize-textarea"></textarea>
+                         <label for="message">Your Message</label>
               </div>
             </div>
             <div>
@@ -494,6 +486,15 @@
     </div>
   </footer>
   <!-- /Footer -->
+
+  <!-- AOS INIT -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-sine',
+      disable: 'mobile',
+    });
+  </script>
 </body>
 
 </html>

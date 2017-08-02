@@ -7,7 +7,6 @@ if (isset($_GET["submit"])) {
 $name = $_GET['name'];
 $email = $_GET['email'];
 $message = $_GET['message'];
-$cords = $_GET['cords'];
 }
 else {
   echo $myError;

@@ -69,17 +69,32 @@ h4 {
   background-color: rgb(250, 250, 250);
 }
 
-.contact .card-panel {
-  margin: 3% 25% 3% 25%;
-}
-
 /* Responsiveness */
 @media screen and (max-width: 992px) {
-  .about {
+  .main {
+    padding: 10% 0 10% 0;
+  }
+
+  .about, .page-footer {
     text-align: center;
   }
+
   .about img {
     padding-bottom: 8%;
+  }
+
+  .screenshots .row .col {
+    padding: 2px 2px 2px 2px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact .card-panel {
+    margin: 3% 25% 3% 25%;
+  }
+
+  .screenshots .row:last-child {
+    padding-top: 1.33%;
   }
 }
 
