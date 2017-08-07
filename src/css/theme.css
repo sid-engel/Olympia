@@ -10,8 +10,8 @@ h4 {
   margin: 0;
 }
 
-.nav-wrapper ul, .brand-logo  {
-  margin: 0px 2% 0px 2%;
+.brand-logo {
+  padding-left: 20px !important;
 }
 
 .header {

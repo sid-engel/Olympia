@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
 
   <!-- Olympia 2.0, created with love by Sid Engel. -->
@@ -46,13 +45,25 @@
 
 <body>
 
+  <!-- Mobile Nav -->
+
+  <!-- /Mobile Nav -->
+
   <!-- Nav -->
   <div class="header" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
     <div class="navbar-fixed">
-      <nav class="z-depth-0">
-        <div class="nav-wrapper" data-aos="fade">
-          <a href="#" class="brand-logo">Olympia</a>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#vip">Vip</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
             <li><a href="#about">About</a></li>
             <li><a href="#staff">Staff</a></li>
             <li><a href="#vip">Vip</a></li>
@@ -61,6 +72,9 @@
           </ul>
         </div>
       </nav>
+
+      <!-- / Nav -->
+
     </div>
     <div class="header-content center-align" data-aos="fade">
       <h1 style="padding-top: 6%;">Welcome To Olympia</h1>
@@ -68,9 +82,9 @@
       <a class="waves-effect waves-light btn-large grey darken-4" style="margin-bottom: 10%; margin-top: 2%;" href="#">GitHub</a>
     </div>
   </div>
-  <!-- / Nav -->
 
   <!-- Info -->
+
   <div class="info center-align" data-aos="fade">
     <div class="main">
       <div class="row">
@@ -107,9 +121,11 @@
       </div>
     </div>
   </div>
+
   <!-- / Info -->
 
   <!-- About -->
+
   <div class="about" id="about">
     <div class="main">
       <div class="row">
@@ -127,9 +143,11 @@
       </div>
     </div>
   </div>
+
   <!-- / About -->
 
   <!-- Staff -->
+
   <div class="staff" id="staff">
     <div class="main">
       <div class="row">
@@ -426,35 +444,35 @@
   <div class="contact" id="contact" style="background: url('./src/img/cityscape.jpg'); background-position: 50% 10%; background-attachment: fixed;">
     <div class="main">
       <div class="card-panel" data-aos="fade-up">
-      <h4 class="center-align">Contact Us</h4>
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
-            <label for="name">Name</label>
+        <h4 class="center-align">Contact Us</h4>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" class="form-control" id="email" name="email" placeholder="Email" required />
+              <label for="email">Email</label>
+            </div>
           </div>
-          <div class="input-field col s6">
-            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required />
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
-                <textarea id="message" class="materialize-textarea"></textarea>
-                         <label for="message">Your Message</label>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="message" class="materialize-textarea"></textarea>
+                  <label for="message">Your Message</label>
+                </div>
               </div>
-            </div>
-            <div>
-              <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect grey darken-4'>Submit</button>
-            </div>
-          </form>
-        </div>
+              <div>
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect grey darken-4'>Submit</button>
+              </div>
+            </form>
+          </div>
 
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
   </div>
   <!-- /Contact -->
 
@@ -494,6 +512,11 @@
       easing: 'ease-in-sine',
       disable: 'mobile',
     });
+  </script>
+
+  <!-- Mobile Nav INIT -->
+  <script>
+    $(".button-collapse").sideNav();
   </script>
 </body>
 
