@@ -1,5 +1,6 @@
 <b>Olympia is a one page "MC Server" theme for Bootstrap created by, Sid Engel.</b>
 
+<b>Demo: https://www.sidengel.com/dev/olympia/</b>
 
 <h2>Getting Started</h2>
 
